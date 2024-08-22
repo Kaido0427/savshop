@@ -159,12 +159,15 @@
                                             <div class="position-relative overflow-hidden">
                                                 <div
                                                     class="product-options d-flex align-items-center justify-content-center gap-2 mx-auto position-absolute bottom-0 start-0 end-0">
-                                                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
-                                                    <a href="javascript:;"><i class="bi bi-basket3"></i></a>
                                                     <a href="javascript:;" data-bs-toggle="modal"
-                                                        data-bs-target="#QuickViewModal"><i
-                                                            class="bi bi-zoom-in"></i></a>
+                                                        data-bs-target="#QuickViewModal"
+                                                        data-title="{{ $article->nom_article }}"
+                                                        data-description="{{ $article->description }}"
+                                                        data-price="{{ $article->prix }}">
+                                                        <i class="bi bi-zoom-in"></i>
+                                                    </a>
                                                 </div>
+
                                                 <a href="#">
                                                     <img src="#" class="card-img-top" alt="...">
                                                 </a>
@@ -180,7 +183,8 @@
                                                         <i class="bi bi-star-fill text-warning"></i>
                                                         <i class="bi bi-star-fill text-warning"></i>
                                                     </div>
-                                                    <p class="mb-0 h6 fw-bold product-price">{{ $article->prix }} XOF/Mois</p>
+                                                    <p class="mb-0 h6 fw-bold product-price">{{ $article->prix }}
+                                                        XOF/Mois</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -200,157 +204,54 @@
     </footer>
     <!--start quick view-->
     <!-- Modal -->
+   
     <div class="modal fade" id="QuickViewModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content rounded-0">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content rounded-0">
+              <div class="modal-body">
+                  <div class="row g-3">
+                    <div class="col-12 col-xl-6">
 
-                <div class="modal-body">
-                    <div class="row g-3">
-                        <div class="col-12 col-xl-6">
+                      <div class="wrap-modal-slider">
 
-                            <div class="wrap-modal-slider">
+                          <div class="slider-for">
+                              <div>
+                                  <img src="{{asset('assets/images/product-images/01.jpg')}}" alt=""
+                                      class="img-fluid">
+                              </div>
 
-                                <div class="slider-for">
-                                    <div>
-                                        <img src="assets/images/product-images/01.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/product-images/02.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/product-images/03.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/product-images/04.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-
-                                <div class="slider-nav mt-3">
-                                    <div>
-                                        <img src="assets/images/product-images/01.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/product-images/02.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/product-images/03.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/product-images/04.jpg" alt=""
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="col-12 col-xl-6">
-                            <div class="product-info">
-                                <h4 class="product-title fw-bold mb-1">Check Pink Kurta</h4>
-                                <p class="mb-0">Women Pink & Off-White Printed Kurta with Palazzos</p>
-                                <div class="product-rating">
-                                    <div class="hstack gap-2 border p-1 mt-3 width-content">
-                                        <div><span class="rating-number">4.8</span><i
-                                                class="bi bi-star-fill ms-1 text-success"></i></div>
-                                        <div class="vr"></div>
-                                        <div>162 Ratings</div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="product-price d-flex align-items-center gap-3">
-                                    <div class="h4 fw-bold">$458</div>
-                                    <div class="h5 fw-light text-muted text-decoration-line-through">$2089</div>
-                                    <div class="h4 fw-bold text-danger">(70% off)</div>
-                                </div>
-                                <p class="fw-bold mb-0 mt-1 text-success">inclusive of all taxes</p>
-
-                                <div class="more-colors mt-3">
-                                    <h6 class="fw-bold mb-3">More Colors</h6>
-                                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                                        <div class="color-box bg-red"></div>
-                                        <div class="color-box bg-primary"></div>
-                                        <div class="color-box bg-yellow"></div>
-                                        <div class="color-box bg-purple"></div>
-                                        <div class="color-box bg-green"></div>
-                                    </div>
-                                </div>
-
-                                <div class="size-chart mt-3">
-                                    <h6 class="fw-bold mb-3">Select Size</h6>
-                                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                                        <div class="">
-                                            <button type="button" class="rounded-0">XS</button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="rounded-0">S</button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="rounded-0">M</button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="rounded-0">L</button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="rounded-0">XL</button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="rounded-0">XXL</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-buttons mt-3">
-                                    <div class="buttons d-flex flex-column gap-3 mt-4">
-                                        <a href="javascript:;"
-                                            class="btn btn-lg btn-dark btn-ecomm px-5 py-3 flex-grow-1"><i
-                                                class="bi bi-basket2 me-2"></i>Add to Bag</a>
-                                        <a href="javascript:;"
-                                            class="btn btn-lg btn-outline-dark btn-ecomm px-5 py-3"><i
-                                                class="bi bi-suit-heart me-2"></i>Wishlist</a>
-                                    </div>
-                                </div>
-                                <hr class="my-3">
-                                <div class="product-share">
-                                    <h6 class="fw-bold mb-3">Share This Product</h6>
-                                    <div class="d-flex align-items-center gap-2 flex-wrap">
-                                        <div class="">
-                                            <button type="button" class="btn-social bg-twitter"><i
-                                                    class="bi bi-twitter"></i></button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="btn-social bg-facebook"><i
-                                                    class="bi bi-facebook"></i></button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="btn-social bg-linkden"><i
-                                                    class="bi bi-linkedin"></i></button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="btn-social bg-youtube"><i
-                                                    class="bi bi-youtube"></i></button>
-                                        </div>
-                                        <div class="">
-                                            <button type="button" class="btn-social bg-pinterest"><i
-                                                    class="bi bi-pinterest"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--end row-->
-                </div>
-
-            </div>
-        </div>
-    </div>
+                          </div>
+                      </div>
+                  </div>
+                      <div class="col-12 col-xl-6">
+                          <div class="product-info">
+                              <h4 class="product-title fw-bold mb-1"></h4>
+                              <p class="mb-0"></p>
+                              <hr>
+                              <div class="product-price d-flex align-items-center gap-3">
+                                  <div class="h4 fw-bold"></div>
+                              </div>
+                              <p class="fw-bold mb-0 mt-1 text-success">inclusive of all taxes</p>
+                              <div class="cart-buttons mt-3">
+                                  <div class="buttons d-flex flex-column gap-3 mt-4">
+                                      <a href="javascript:;" class="btn btn-lg btn-dark btn-ecomm px-5 py-3 flex-grow-1">
+                                          <i class="bi bi-basket2 me-2"></i>Add to Bag
+                                      </a>
+                                      <a href="javascript:;" class="btn btn-lg btn-outline-dark btn-ecomm px-5 py-3">
+                                          <i class="bi bi-suit-heart me-2"></i>Wishlist
+                                      </a>
+                                  </div>
+                              </div>
+                              <hr class="my-3">
+                          </div>
+                      </div>
+                  </div>
+                  <!--end row-->
+              </div>
+          </div>
+      </div>
+  </div>
+  
     <!--end quick view-->
     <!--Start Back To Top Button-->
     <a href="javaScript:;" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -363,6 +264,24 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/index.js') }}"></script>
     <script src="{{ asset('assets/js/loader.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var quickViewModal = document.getElementById('QuickViewModal');
+            quickViewModal.addEventListener('show.bs.modal', function(event) {
+                var button = event.relatedTarget;
+                var title = button.getAttribute('data-title');
+                var description = button.getAttribute('data-description');
+                var price = button.getAttribute('data-price');
+                var image = button.getAttribute('data-image');
+
+                // Mettre à jour les éléments du modal avec les données de l'article
+                quickViewModal.querySelector('.product-title').textContent = title;
+                quickViewModal.querySelector('.product-info p').textContent = description;
+                quickViewModal.querySelector('.product-price .h4').textContent = '$' + price;
+                quickViewModal.querySelector('.slider-for img').src = image;
+            });
+        });
+    </script>
 </body>
 
 </html>
