@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\payMail;
 use App\Models\article;
 use App\Models\articleTransaction;
-use App\Models\categorie; 
+use App\Models\categorie;
 use App\Models\transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -15,18 +15,17 @@ class TransactionController extends Controller
 {
     public function produits()
     {
-        //Je renvoie sur la vue savpay c'est a dire la page principale
-        //tous les produits principaux et leurs catégories pour servir de vitrine
-        $articles = article::with('categorie')
-            ->whereHas('categorie', function ($query) {
+        // Je récupère toutes les catégories avec leurs articles, sauf celles nommées "autres"
+        $categories = categorie::with(['articles' => function ($query) {
+            $query->whereHas('categorie', function ($query) {
                 $query->where('nom', '!=', 'autres');
-            })
-            ->get()
-            ->load('categorie');
-
-
-        return view('savshop', compact('articles'));
+            });
+        }])->get();
+    
+        // Renvoie les catégories et leurs articles à la vue "index"
+        return view('index', compact('categories'));
     }
+    
 
     public function success(Request $request, $id)
     {
@@ -45,7 +44,7 @@ class TransactionController extends Controller
             Log::info('Transaction data from request: ', $transactionData);
 
             $transactionId = $transactionData['transaction_id'];
-  
+
             // Vérifier la transaction
             $transactionDetails = $kkiapay->verifyTransaction($transactionId);
 
