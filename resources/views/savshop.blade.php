@@ -21,7 +21,7 @@
             border-color: #e5e7eb
         }
 
-        ::after,
+        ::after, 
         ::before {
             --tw-content: ''
         }
@@ -38,6 +38,15 @@
         body {
             margin: 0;
             line-height: inherit
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            /* Empêche le défilement horizontal */
         }
 
         hr {
@@ -827,22 +836,8 @@
         }
     </style>
     <!-- This site is optimized with the Yoast SEO plugin v22.1 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>SAVSHOP| SAVOIR PLUS CONSEIL</title>
-    <link rel="canonical" href="https://agence.savplus.net/">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Accueil - Agence web Savplus">
-    <meta property="og:description"
-        content="Boostez votre image pour la rendre unique. unique. unique. La réussite de votre communication est notre vocation et nous mettons tout en œuvre pour transformer vos difficultés en valeur ajoutée. Nous contacter Notre Mission Créer une identité visuelle qui permet de reconnaître une marque. Elle se compose de plusieurs éléments comme : Le logo de […]">
-    <meta property="og:url" content="https://agence.savplus.net/">
-    <meta property="og:site_name" content="Agence web Savplus">
-    <meta property="article:publisher" content="https://web.facebook.com/Savoirplusschoolbenin/?_rdc=1&amp;_rdr">
-    <meta property="article:modified_time" content="2024-02-09T08:51:44+00:00">
-    <meta property="og:image"
-        content="https://agence.savplus.net/wp-content/uploads/2022/11/undraw_on_the_office_re_cxds.svg">
-    <meta name="twitter:card" content="summary_large_image">
-    <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://agence.savplus.net/","url":"https://agence.savplus.net/","name":"Accueil - Agence web Savplus","isPartOf":{"@id":"https://agence.savplus.net/#website"},"about":{"@id":"https://agence.savplus.net/#organization"},"primaryImageOfPage":{"@id":"https://agence.savplus.net/#primaryimage"},"image":{"@id":"https://agence.savplus.net/#primaryimage"},"thumbnailUrl":"https://agence.savplus.net/wp-content/uploads/2022/11/undraw_on_the_office_re_cxds.svg","datePublished":"2022-11-16T08:01:07+00:00","dateModified":"2024-02-09T08:51:44+00:00","breadcrumb":{"@id":"https://agence.savplus.net/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://agence.savplus.net/"]}]},{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://agence.savplus.net/#primaryimage","url":"https://agence.savplus.net/wp-content/uploads/2022/11/undraw_on_the_office_re_cxds.svg","contentUrl":"https://agence.savplus.net/wp-content/uploads/2022/11/undraw_on_the_office_re_cxds.svg","width":810,"height":599},{"@type":"BreadcrumbList","@id":"https://agence.savplus.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil"}]},{"@type":"WebSite","@id":"https://agence.savplus.net/#website","url":"https://agence.savplus.net/","name":"Agence web Savplus","description":"","publisher":{"@id":"https://agence.savplus.net/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://agence.savplus.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"Organization","@id":"https://agence.savplus.net/#organization","name":"Agence web Savplus","url":"https://agence.savplus.net/","logo":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://agence.savplus.net/#/schema/logo/image/","url":"https://agence.savplus.net/wp-content/uploads/2022/11/logo.png","contentUrl":"https://agence.savplus.net/wp-content/uploads/2022/11/logo.png","width":2084,"height":524,"caption":"Agence web Savplus"},"image":{"@id":"https://agence.savplus.net/#/schema/logo/image/"},"sameAs":["https://web.facebook.com/Savoirplusschoolbenin/?_rdc=1&_rdr"]}]}</script>
-    <!-- / Yoast SEO plugin. -->
+    <title>CAISSE| SAVOIR PLUS CONSEIL</title>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -1129,7 +1124,14 @@
 
         .tagcloud a:hover,
         .tagcloud a:focus,
-        .tagcloud a.current-item{color:#ffffff;border-color:var(--ast-global-color-0);background-color:var(--ast-global-color-0);}input:focus,input[type="text"]:focus,
+        .tagcloud a.current-item {
+            color: #ffffff;
+            border-color: var(--ast-global-color-0);
+            background-color: var(--ast-global-color-0);
+        }
+
+        input:focus,
+        input[type="text"]:focus,
         input[type="email"]:focus,
         input[type="url"]:focus,
         input[type="password"]:focus,
@@ -1281,7 +1283,18 @@
         .woocommerce .astra-shop-summary-wrap a:focus-visible,
         .woocommerce a.wc-forward:focus-visible,
         #ast-apply-coupon:focus-visible,
-        .woocommerce-js .woocommerce-mini-cart-item a.remove:focus-visible,#close:focus-visible,.button.search-submit:focus-visible,#search_submit:focus,.normal-search:focus-visible{outline-style:dotted;outline-color:inherit;outline-width:thin;}input:focus,input[type="text"]:focus,
+        .woocommerce-js .woocommerce-mini-cart-item a.remove:focus-visible,
+        #close:focus-visible,
+        .button.search-submit:focus-visible,
+        #search_submit:focus,
+        .normal-search:focus-visible {
+            outline-style: dotted;
+            outline-color: inherit;
+            outline-width: thin;
+        }
+
+        input:focus,
+        input[type="text"]:focus,
         input[type="email"]:focus,
         input[type="url"]:focus,
         input[type="password"]:focus,
@@ -1848,48 +1861,82 @@
 
             .wp-block-button .wp-block-button__link,
             .wp-block-search .wp-block-search__button,
-            body .wp-block-file .wp-block-file__button{padding-top:12px;padding-right:24px;padding-bottom:12px;padding-left:24px;}}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],
-            input[type="submit"],
-            input[type="reset"],
-            form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
-            body .wp-block-file .wp-block-file__button,
-            .search .search-submit {
-                border-style: solid;
-                border-top-width: 0;
-                border-right-width: 0;
-                border-left-width: 0;
-                border-bottom-width: 0;
-                color: #ffffff;
-                border-color: var(--ast-global-color-0);
-                background-color: var(--ast-global-color-0);
-                padding-top: 15px;
-                padding-right: 30px;
-                padding-bottom: 15px;
-                padding-left: 30px;
-                font-family: inherit;
-                font-weight: inherit;
-                line-height: 1em;
+            body .wp-block-file .wp-block-file__button {
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
             }
+        }
 
-            button:focus,
-            .menu-toggle:hover,
-            button:hover,
-            .ast-button:hover,
-            .ast-custom-button:hover .button:hover,
-            .ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,
-            input[type="button"]:focus,
-            input[type="submit"]:hover,
-            input[type="submit"]:focus,
-            form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:hover,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:focus,
-            body .wp-block-file .wp-block-file__button:hover,
-            body .wp-block-file .wp-block-file__button:focus{color:#ffffff;background-color:var(--ast-global-color-1);border-color:var(--ast-global-color-1);}form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button.has-icon {
-                padding-top: calc(15px - 3px);
-                padding-right: calc(30px - 3px);
-                padding-bottom: calc(15px - 3px);
-                padding-left: calc(30px - 3px);
-            }
+        .menu-toggle,
+        button,
+        .ast-button,
+        .ast-custom-button,
+        .button,
+        input#submit,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"],
+        form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
+        body .wp-block-file .wp-block-file__button,
+        .search .search-submit {
+            border-style: solid;
+            border-top-width: 0;
+            border-right-width: 0;
+            border-left-width: 0;
+            border-bottom-width: 0;
+            color: #ffffff;
+            border-color: var(--ast-global-color-0);
+            background-color: var(--ast-global-color-0);
+            padding-top: 15px;
+            padding-right: 30px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: 1em;
+        }
 
-            @media (max-width:921px){.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],
+        button:focus,
+        .menu-toggle:hover,
+        button:hover,
+        .ast-button:hover,
+        .ast-custom-button:hover .button:hover,
+        .ast-custom-button:hover,
+        input[type=reset]:hover,
+        input[type=reset]:focus,
+        input#submit:hover,
+        input#submit:focus,
+        input[type="button"]:hover,
+        input[type="button"]:focus,
+        input[type="submit"]:hover,
+        input[type="submit"]:focus,
+        form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:hover,
+        form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:focus,
+        body .wp-block-file .wp-block-file__button:hover,
+        body .wp-block-file .wp-block-file__button:focus {
+            color: #ffffff;
+            background-color: var(--ast-global-color-1);
+            border-color: var(--ast-global-color-1);
+        }
+
+        form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button.has-icon {
+            padding-top: calc(15px - 3px);
+            padding-right: calc(30px - 3px);
+            padding-bottom: calc(15px - 3px);
+            padding-left: calc(30px - 3px);
+        }
+
+        @media (max-width:921px) {
+
+            .menu-toggle,
+            button,
+            .ast-button,
+            .ast-custom-button,
+            .button,
+            input#submit,
+            input[type="button"],
             input[type="submit"],
             input[type="reset"],
             form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
@@ -1902,17 +1949,25 @@
             }
         }
 
-        @media (max-width:544px){.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],
-        input[type="submit"],
-        input[type="reset"],
-        form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
-        body .wp-block-file .wp-block-file__button,
-        .search .search-submit {
-            padding-top:12px;
-            padding-right:24px;
-            padding-bottom:12px;
-            padding-left:24px;
-        }
+        @media (max-width:544px) {
+
+            .menu-toggle,
+            button,
+            .ast-button,
+            .ast-custom-button,
+            .button,
+            input#submit,
+            input[type="button"],
+            input[type="submit"],
+            input[type="reset"],
+            form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
+            body .wp-block-file .wp-block-file__button,
+            .search .search-submit {
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+            }
         }
 
         @media (max-width:921px) {
@@ -2574,829 +2629,901 @@
             text-align: center;
             position: relative;
 
-            background: #eeeeee;}.ast-single-entry-banner[data-banner-layout="layout-1"] {
-                max-width: 1200px;
-                background: inherit;
-
-                padding: 20px 0;}.ast-single-entry-banner[data-banner-width-type="custom"] {
-                    margin: 0 auto;
-                    width: 100%;
-                }
-
-                .ast-single-entry-banner+.site-content .entry-header {
-                    margin-bottom: 0;
-                }
-
-                .site .ast-author-avatar {
-                    --ast-author-avatar-size: ;
-                }
-
-                a.ast-underline-text {
-                    text-decoration: underline;
-                }
-
-                .ast-container>.ast-terms-link {
-                    position: relative;
-                    display: block;
-                }
-
-                a.ast-button.ast-badge-tax {
-                    padding: 4px 8px;
-                    border-radius: 3px;
-                    font-size: inherit;
-                }
-
-                header.entry-header>*:not(:last-child) {
-                    margin-bottom: 10px;
-                }
-
-                .ast-archive-entry-banner {
-                    -js-display: flex;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    text-align: center;
-                    position: relative;
-
-                    background: #eeeeee;}.ast-archive-entry-banner[data-banner-width-type="custom"] {
-                        margin: 0 auto;
-
-                        width: 100%;}.ast-archive-entry-banner[data-banner-layout="layout-1"] {
-                            background: inherit;
-                            padding: 20px 0;
-                            text-align: left;
-                        }
-
-                        body.archive .ast-archive-description {
-                            max-width: 1200px;
-                            width: 100%;
-                            text-align: left;
-                            padding-top: 3em;
-                            padding-right: 3em;
-                            padding-bottom: 3em;
-                            padding-left: 3em;
-                        }
-
-                        body.archive .ast-archive-description .ast-archive-title,
-                        body.archive .ast-archive-description .ast-archive-title * {
-                            font-size: 40px;
-                            font-size: 2.6666666666667rem;
-                        }
-
-                        body.archive .ast-archive-description>*:not(:last-child) {
-                            margin-bottom: 10px;
-                        }
-
-                        @media (max-width:921px) {
-                            body.archive .ast-archive-description {
-                                text-align: left;
-                            }
-                        }
-
-                        @media (max-width:544px) {
-                            body.archive .ast-archive-description {
-                                text-align: left;
-                            }
-                        }
-
-                        .ast-breadcrumbs .trail-browse,
-                        .ast-breadcrumbs .trail-items,
-                        .ast-breadcrumbs .trail-items li {
-                            display: inline-block;
-                            margin: 0;
-                            padding: 0;
-                            border: none;
-                            background: inherit;
-                            text-indent: 0;
-                            text-decoration: none;
-                        }
-
-                        .ast-breadcrumbs .trail-browse {
-                            font-size: inherit;
-                            font-style: inherit;
-                            font-weight: inherit;
-                            color: inherit;
-                        }
-
-                        .ast-breadcrumbs .trail-items {
-                            list-style: none;
-                        }
-
-                        .trail-items li::after {
-                            padding: 0 0.3em;
-                            content: "\00bb";
-                        }
-
-                        .trail-items li:last-of-type::after {
-                            display: none;
-                        }
-
-                        h1,
-                        .entry-content h1,
-                        h2,
-                        .entry-content h2,
-                        h3,
-                        .entry-content h3,
-                        h4,
-                        .entry-content h4,
-                        h5,
-                        .entry-content h5,
-                        h6,
-                        .entry-content h6 {
-                            color: var(--ast-global-color-2);
-                        }
-
-                        .entry-title a {
-                            color: var(--ast-global-color-2);
-                        }
-
-                        @media (max-width:921px) {
-
-                            .ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row>*:first-child,
-                            .ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row>*:last-child {
-                                grid-column: 1 / -1;
-                            }
-                        }
-
-                        @media (max-width:544px) {
-
-                            .ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row>*:first-child,
-                            .ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row>*:last-child {
-                                grid-column:1 / -1;}}.ast-builder-layout-element[data-section="title_tagline"] {
-                                    display: flex;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"] {
-                                        display: flex;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"] {
-                                        display: flex;
-                                    }
-                                }
-
-                                .ast-builder-menu-1 {
-                                    font-family: inherit;
-                                    font-weight: inherit;
-                                }
-
-                                .ast-builder-menu-1 .sub-menu,
-                                .ast-builder-menu-1 .inline-on-mobile .sub-menu {
-                                    border-top-width: 2px;
-                                    border-bottom-width: 0px;
-                                    border-right-width: 0px;
-                                    border-left-width: 0px;
-                                    border-color: var(--ast-global-color-0);
-                                    border-style: solid;
-                                }
-
-                                .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
-                                .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
-                                    margin-top: 0px;
-                                }
-
-                                .ast-desktop .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu:before,
-                                .ast-desktop .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper:before {
-                                    height: calc(0px + 5px);
-                                }
-
-                                .ast-desktop .ast-builder-menu-1 .menu-item .sub-menu .menu-link {
-                                    border-style: none;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                        top: 0;
-                                    }
-
-                                    .ast-builder-menu-1 .inline-on-mobile .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                        right: -15px;
-                                    }
-
-                                    .ast-builder-menu-1 .menu-item-has-children>.menu-link:after {
-                                        content: unset;
-                                    }
-
-                                    .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
-                                    .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
-                                        margin-top: 0;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                        top: 0;
-                                    }
-
-                                    .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
-                                    .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
-                                        margin-top: 0;
-                                    }
-                                }
-
-                                .ast-builder-menu-1 {
-                                    display: flex;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-header-break-point .ast-builder-menu-1 {
-                                        display: flex;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-header-break-point .ast-builder-menu-1{display:flex;}}.site-below-footer-wrap{padding-top:20px;padding-bottom:20px;}.site-below-footer-wrap[data-section="section-below-footer-builder"] {
-                                        background-color: #eeeeee;
-                                        ;
-                                        min-height: 80px;
-                                        border-style: solid;
-                                        border-width: 0px;
-                                        border-top-width: 1px;
-                                        border-top-color: var(--ast-global-color-6);
-                                    }
-
-                                    .site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row{max-width:1200px;min-height:80px;margin-left:auto;margin-right:auto;}.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row,.site-below-footer-wrap[data-section="section-below-footer-builder"] .site-footer-section{align-items:flex-start;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-inline .site-footer-section {
-                                        display: flex;
-                                        margin-bottom: 0;
-                                    }
-
-                                    .ast-builder-grid-row-full .ast-builder-grid-row {
-                                        grid-template-columns: 1fr;
-                                    }
-
-                                    @media (max-width:921px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-stack .site-footer-section {
-                                        display: block;
-                                        margin-bottom: 10px;
-                                    }
-
-                                    .ast-builder-grid-row-container.ast-builder-grid-row-tablet-full .ast-builder-grid-row {
-                                        grid-template-columns: 1fr;
-                                    }
-                                }
-
-                                @media (max-width:544px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-stack .site-footer-section {
-                                    display: block;
-                                    margin-bottom: 10px;
-                                }
-
-                                .ast-builder-grid-row-container.ast-builder-grid-row-mobile-full .ast-builder-grid-row{grid-template-columns:1fr;}}.site-below-footer-wrap[data-section="section-below-footer-builder"] {
-                                    display: grid;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"] {
-                                        display: grid;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"] {
-                                        display: grid;
-                                    }
-                                }
-
-                                .ast-footer-copyright {
-                                    text-align: center;
-                                }
-
-                                .ast-footer-copyright {
-                                    color: var(--ast-global-color-3);
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-footer-copyright {
-                                        text-align: center;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-footer-copyright {
-                                        text-align: center;
-                                    }
-                                }
-
-                                .ast-footer-copyright.ast-builder-layout-element {
-                                    display: flex;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-header-break-point .ast-footer-copyright.ast-builder-layout-element {
-                                        display: flex;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-header-break-point .ast-footer-copyright.ast-builder-layout-element {
-                                        display: flex;
-                                    }
-                                }
-
-                                .footer-widget-area.widget-area.site-footer-focus-item {
-                                    width: auto;
-                                }
-
-                                .elementor-widget-heading .elementor-heading-title {
-                                    margin: 0;
-                                }
-
-                                .elementor-page .ast-menu-toggle {
-                                    color: unset !important;
-                                    background: unset !important;
-                                }
-
-                                .elementor-post.elementor-grid-item.hentry {
-                                    margin-bottom: 0;
-                                }
-
-                                .woocommerce div.product .elementor-element.elementor-products-grid .related.products ul.products li.product,
-                                .elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product {
-                                    width: auto;
-                                    margin: 0;
-                                    float: none;
-                                }
-
-                                .elementor-toc__list-wrapper {
-                                    margin: 0;
-                                }
-
-                                body .elementor hr {
-                                    background-color: #ccc;
-                                    margin: 0;
-                                }
-
-                                .ast-left-sidebar .elementor-section.elementor-section-stretched,
-                                .ast-right-sidebar .elementor-section.elementor-section-stretched {
-                                    max-width: 100%;
-                                    left: 0 !important;
-                                }
-
-                                .elementor-posts-container [CLASS*="ast-width-"] {
-                                    width: 100%;
-                                }
-
-                                .elementor-template-full-width .ast-container {
-                                    display: block;
-                                }
-
-                                .elementor-screen-only,
-                                .screen-reader-text,
-                                .screen-reader-text span,
-                                .ui-helper-hidden-accessible {
-                                    top: 0 !important;
-                                }
-
-                                @media (max-width:544px) {
-                                    .elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product {
-                                        width: auto;
-                                        margin: 0;
-                                    }
-
-                                    .elementor-element .woocommerce .woocommerce-result-count {
-                                        float: none;
-                                    }
-                                }
-
-                                .ast-header-break-point .main-header-bar {
-                                    border-bottom-width: 1px;
-                                }
-
-                                @media (min-width:922px) {
-                                    .main-header-bar {
-                                        border-bottom-width: 1px;
-                                    }
-                                }
-
-                                .main-header-menu .menu-item,
-                                #astra-footer-menu .menu-item,
-                                .main-header-bar .ast-masthead-custom-menu-items {
-                                    -js-display: flex;
-                                    display: flex;
-                                    -webkit-box-pack: center;
-                                    -webkit-justify-content: center;
-                                    -moz-box-pack: center;
-                                    -ms-flex-pack: center;
-                                    justify-content: center;
-                                    -webkit-box-orient: vertical;
-                                    -webkit-box-direction: normal;
-                                    -webkit-flex-direction: column;
-                                    -moz-box-orient: vertical;
-                                    -moz-box-direction: normal;
-                                    -ms-flex-direction: column;
-                                    flex-direction: column;
-                                }
-
-                                .main-header-menu>.menu-item>.menu-link,
-                                #astra-footer-menu>.menu-item>.menu-link {
-                                    height: 100%;
-                                    -webkit-box-align: center;
-                                    -webkit-align-items: center;
-                                    -moz-box-align: center;
-                                    -ms-flex-align: center;
-                                    align-items: center;
-                                    -js-display: flex;
-                                    display: flex;
-                                }
-
-                                .ast-header-break-point .main-navigation ul .menu-item .menu-link .icon-arrow:first-of-type svg {
-                                    top: .2em;
-                                    margin-top: 0px;
-                                    margin-left: 0px;
-                                    width: .65em;
-                                    transform: translate(0, -2px) rotateZ(270deg);
-                                }
-
-                                .ast-mobile-popup-content .ast-submenu-expanded>.ast-menu-toggle {
-                                    transform: rotateX(180deg);
-                                    overflow-y: auto;
-                                }
-
-                                @media (min-width:922px) {
-                                    .ast-builder-menu .main-navigation>ul>li:last-child a {
-                                        margin-right: 0;
-                                    }
-                                }
-
-                                .ast-separate-container .ast-article-inner {
-                                    background-color: transparent;
-                                    background-image: none;
-                                }
-
-                                .ast-separate-container .ast-article-post {
-                                    background-color: var(--ast-global-color-5);
-                                    ;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-separate-container .ast-article-post {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-separate-container .ast-article-post {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                .ast-separate-container .ast-article-single:not(.ast-related-post),
-                                .woocommerce.ast-separate-container .ast-woocommerce-container,
-                                .ast-separate-container .error-404,
-                                .ast-separate-container .no-results,
-                                .single.ast-separate-container .site-main .ast-author-meta,
-                                .ast-separate-container .related-posts-title-wrapper,
-                                .ast-separate-container .comments-count-wrapper,
-                                .ast-box-layout.ast-plain-container .site-content,
-                                .ast-padded-layout.ast-plain-container .site-content,
-                                .ast-separate-container .ast-archive-description,
-                                .ast-separate-container .comments-area .comment-respond,
-                                .ast-separate-container .comments-area .ast-comment-list li,
-                                .ast-separate-container .comments-area .comments-title {
-                                    background-color: var(--ast-global-color-5);
-                                    ;
-                                }
-
-                                @media (max-width:921px) {
-
-                                    .ast-separate-container .ast-article-single:not(.ast-related-post),
-                                    .woocommerce.ast-separate-container .ast-woocommerce-container,
-                                    .ast-separate-container .error-404,
-                                    .ast-separate-container .no-results,
-                                    .single.ast-separate-container .site-main .ast-author-meta,
-                                    .ast-separate-container .related-posts-title-wrapper,
-                                    .ast-separate-container .comments-count-wrapper,
-                                    .ast-box-layout.ast-plain-container .site-content,
-                                    .ast-padded-layout.ast-plain-container .site-content,
-                                    .ast-separate-container .ast-archive-description {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-
-                                    .ast-separate-container .ast-article-single:not(.ast-related-post),
-                                    .woocommerce.ast-separate-container .ast-woocommerce-container,
-                                    .ast-separate-container .error-404,
-                                    .ast-separate-container .no-results,
-                                    .single.ast-separate-container .site-main .ast-author-meta,
-                                    .ast-separate-container .related-posts-title-wrapper,
-                                    .ast-separate-container .comments-count-wrapper,
-                                    .ast-box-layout.ast-plain-container .site-content,
-                                    .ast-padded-layout.ast-plain-container .site-content,
-                                    .ast-separate-container .ast-archive-description {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                .ast-separate-container.ast-two-container #secondary .widget {
-                                    background-color: var(--ast-global-color-5);
-                                    ;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-separate-container.ast-two-container #secondary .widget {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-separate-container.ast-two-container #secondary .widget {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                .ast-plain-container,
-                                .ast-page-builder-template {
-                                    background-color: var(--ast-global-color-5);
-                                    ;
-                                }
-
-                                @media (max-width:921px) {
-
-                                    .ast-plain-container,
-                                    .ast-page-builder-template {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-
-                                    .ast-plain-container,
-                                    .ast-page-builder-template {
-                                        background-color: var(--ast-global-color-5);
-                                        ;
-                                    }
-                                }
-
-                                .ast-mobile-header-content>*,
-                                .ast-desktop-header-content>* {
-                                    padding: 10px 0;
-                                    height: auto;
-                                }
-
-                                .ast-mobile-header-content>*:first-child,
-                                .ast-desktop-header-content>*:first-child {
-                                    padding-top: 10px;
-                                }
-
-                                .ast-mobile-header-content>.ast-builder-menu,
-                                .ast-desktop-header-content>.ast-builder-menu {
-                                    padding-top: 0;
-                                }
-
-                                .ast-mobile-header-content>*:last-child,
-                                .ast-desktop-header-content>*:last-child {
-                                    padding-bottom: 0;
-                                }
-
-                                .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search label,
-                                .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search label {
-                                    width: 100%;
-                                }
-
-                                .ast-desktop-header-content .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before {
-                                    transform: rotateX(180deg);
-                                }
-
-                                #ast-desktop-header .ast-desktop-header-content,
-                                .ast-mobile-header-content .ast-search-icon,
-                                .ast-desktop-header-content .ast-search-icon,
-                                .ast-mobile-header-wrap .ast-mobile-header-content,
-                                .ast-main-header-nav-open.ast-popup-nav-open .ast-mobile-header-wrap .ast-mobile-header-content,
-                                .ast-main-header-nav-open.ast-popup-nav-open .ast-desktop-header-content {
-                                    display: none;
-                                }
-
-                                .ast-main-header-nav-open.ast-header-break-point #ast-desktop-header .ast-desktop-header-content,
-                                .ast-main-header-nav-open.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content {
-                                    display: block;
-                                }
-
-                                .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up>.menu-item>.sub-menu,
-                                .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up>.menu-item .menu-item>.sub-menu,
-                                .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down>.menu-item>.sub-menu,
-                                .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down>.menu-item .menu-item>.sub-menu,
-                                .ast-desktop .ast-desktop-header-content .astra-menu-animation-fade>.menu-item>.sub-menu,
-                                .ast-desktop .ast-desktop-header-content .astra-menu-animation-fade>.menu-item .menu-item>.sub-menu {
-                                    opacity: 1;
-                                    visibility: visible;
-                                }
-
-                                .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation {
-                                    width: unset;
-                                    margin: unset;
-                                }
-
-                                .ast-mobile-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle,
-                                .ast-desktop-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle {
-                                    left: calc(20px - 0.907em);
-                                    right: auto;
-                                }
-
-                                .ast-mobile-header-content .ast-search-menu-icon,
-                                .ast-mobile-header-content .ast-search-menu-icon.slide-search,
-                                .ast-desktop-header-content .ast-search-menu-icon,
-                                .ast-desktop-header-content .ast-search-menu-icon.slide-search {
-                                    width: 100%;
-                                    position: relative;
-                                    display: block;
-                                    right: auto;
-                                    transform: none;
-                                }
-
-                                .ast-mobile-header-content .ast-search-menu-icon.slide-search .search-form,
-                                .ast-mobile-header-content .ast-search-menu-icon .search-form,
-                                .ast-desktop-header-content .ast-search-menu-icon.slide-search .search-form,
-                                .ast-desktop-header-content .ast-search-menu-icon .search-form {
-                                    right: 0;
-                                    visibility: visible;
-                                    opacity: 1;
-                                    position: relative;
-                                    top: auto;
-                                    transform: none;
-                                    padding: 0;
-                                    display: block;
-                                    overflow: hidden;
-                                }
-
-                                .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,
-                                .ast-mobile-header-content .ast-search-menu-icon .search-field,
-                                .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,
-                                .ast-desktop-header-content .ast-search-menu-icon .search-field {
-                                    width: 100%;
-                                    padding-right: 5.5em;
-                                }
-
-                                .ast-mobile-header-content .ast-search-menu-icon .search-submit,
-                                .ast-desktop-header-content .ast-search-menu-icon .search-submit {
-                                    display: block;
-                                    position: absolute;
-                                    height: 100%;
-                                    top: 0;
-                                    right: 0;
-                                    padding: 0 1em;
-                                    border-radius: 0;
-                                }
-
-                                .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {
-                                    padding-left: 30px;
-                                }
-
-                                .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation .sub-menu .menu-item .menu-item .menu-link {
-                                    padding-left: 40px;
-                                }
-
-                                .ast-mobile-popup-drawer.active .ast-mobile-popup-inner {
-                                    background-color: #ffffff;
-                                    ;
-                                }
-
-                                .ast-mobile-header-wrap .ast-mobile-header-content,
-                                .ast-desktop-header-content {
-                                    background-color: #ffffff;
-                                    ;
-                                }
-
-                                .ast-mobile-popup-content>*,
-                                .ast-mobile-header-content>*,
-                                .ast-desktop-popup-content>*,
-                                .ast-desktop-header-content>* {
-                                    padding-top: 0px;
-                                    padding-bottom: 0px;
-                                }
-
-                                .content-align-flex-start .ast-builder-layout-element {
-                                    justify-content: flex-start;
-                                }
-
-                                .content-align-flex-start .main-header-menu {
-                                    text-align: left;
-                                }
-
-                                .ast-mobile-popup-drawer.active .menu-toggle-close {
-                                    color: #3a3a3a;
-                                }
-
-                                .ast-mobile-header-wrap .ast-primary-header-bar,
-                                .ast-primary-header-bar .site-primary-header-wrap {
-                                    min-height: 80px;
-                                }
-
-                                .ast-desktop .ast-primary-header-bar .main-header-menu>.menu-item {
-                                    line-height: 80px;
-                                }
-
-                                .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-primary-header-bar,
-                                .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-below-header-bar,
-                                .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-above-header-bar {
-                                    padding-left: 20px;
-                                    padding-right: 20px;
-                                }
-
-                                .ast-header-break-point .ast-primary-header-bar {
-                                    border-bottom-width: 1px;
-                                    border-bottom-color: #eaeaea;
-                                    border-bottom-style: solid;
-                                }
-
-                                @media (min-width:922px) {
-                                    .ast-primary-header-bar {
-                                        border-bottom-width: 1px;
-                                        border-bottom-color: #eaeaea;
-                                        border-bottom-style: solid;
-                                    }
-                                }
-
-                                .ast-primary-header-bar {
-                                    background-color: #ffffff;
-                                    ;
-                                }
-
-                                .ast-primary-header-bar {
-                                    display: block;
-                                }
-
-                                @media (max-width:921px) {
-                                    .ast-header-break-point .ast-primary-header-bar {
-                                        display: grid;
-                                    }
-                                }
-
-                                @media (max-width:544px) {
-                                    .ast-header-break-point .ast-primary-header-bar{display:grid;}}[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal{color:var(--ast-global-color-0);border:none;background:transparent;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg{width:20px;height:20px;fill:var(--ast-global-color-0);}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-wrap .mobile-menu {
-                                        color: var(--ast-global-color-0);
-                                    }
-
-                                    .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                        top: 0;
-                                    }
-
-                                    .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
-                                        content: unset;
-                                    }
-
-                                    .ast-hfb-header .ast-builder-menu-mobile .main-header-menu,
-                                    .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .menu-link,
-                                    .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .sub-menu .menu-link {
-                                        border-style: none;
-                                    }
-
-                                    .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                        top: 0;
-                                    }
-
-                                    @media (max-width:921px) {
-                                        .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                            top: 0;
-                                        }
-
-                                        .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
-                                            content: unset;
-                                        }
-                                    }
-
-                                    @media (max-width:544px) {
-                                        .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
-                                            top: 0;
-                                        }
-                                    }
-
-                                    .ast-builder-menu-mobile .main-navigation {
-                                        display: block;
-                                    }
-
-                                    @media (max-width:921px) {
-                                        .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
-                                            display: block;
-                                        }
-                                    }
-
-                                    @media (max-width:544px) {
-                                        .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
-                                            display: block;
-                                        }
-                                    }
-
-                                    :root {
-                                        --e-global-color-astglobalcolor0: #0170B9;
-                                        --e-global-color-astglobalcolor1: #3a3a3a;
-                                        --e-global-color-astglobalcolor2: #3a3a3a;
-                                        --e-global-color-astglobalcolor3: #4B4F58;
-                                        --e-global-color-astglobalcolor4: #F5F5F5;
-                                        --e-global-color-astglobalcolor5: #FFFFFF;
-                                        --e-global-color-astglobalcolor6: #E5E5E5;
-                                        --e-global-color-astglobalcolor7: #424242;
-                                        --e-global-color-astglobalcolor8: #000000;
-                                    }
+            background: #eeeeee;
+        }
+
+        .ast-single-entry-banner[data-banner-layout="layout-1"] {
+            max-width: 1200px;
+            background: inherit;
+
+            padding: 20px 0;
+        }
+
+        .ast-single-entry-banner[data-banner-width-type="custom"] {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .ast-single-entry-banner+.site-content .entry-header {
+            margin-bottom: 0;
+        }
+
+        .site .ast-author-avatar {
+            --ast-author-avatar-size: ;
+        }
+
+        a.ast-underline-text {
+            text-decoration: underline;
+        }
+
+        .ast-container>.ast-terms-link {
+            position: relative;
+            display: block;
+        }
+
+        a.ast-button.ast-badge-tax {
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: inherit;
+        }
+
+        header.entry-header>*:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .ast-archive-entry-banner {
+            -js-display: flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+
+            background: #eeeeee;
+        }
+
+        .ast-archive-entry-banner[data-banner-width-type="custom"] {
+            margin: 0 auto;
+
+            width: 100%;
+        }
+
+        .ast-archive-entry-banner[data-banner-layout="layout-1"] {
+            background: inherit;
+            padding: 20px 0;
+            text-align: left;
+        }
+
+        body.archive .ast-archive-description {
+            max-width: 1200px;
+            width: 100%;
+            text-align: left;
+            padding-top: 3em;
+            padding-right: 3em;
+            padding-bottom: 3em;
+            padding-left: 3em;
+        }
+
+        body.archive .ast-archive-description .ast-archive-title,
+        body.archive .ast-archive-description .ast-archive-title * {
+            font-size: 40px;
+            font-size: 2.6666666666667rem;
+        }
+
+        body.archive .ast-archive-description>*:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width:921px) {
+            body.archive .ast-archive-description {
+                text-align: left;
+            }
+        }
+
+        @media (max-width:544px) {
+            body.archive .ast-archive-description {
+                text-align: left;
+            }
+        }
+
+        .ast-breadcrumbs .trail-browse,
+        .ast-breadcrumbs .trail-items,
+        .ast-breadcrumbs .trail-items li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: inherit;
+            text-indent: 0;
+            text-decoration: none;
+        }
+
+        .ast-breadcrumbs .trail-browse {
+            font-size: inherit;
+            font-style: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
+
+        .ast-breadcrumbs .trail-items {
+            list-style: none;
+        }
+
+        .trail-items li::after {
+            padding: 0 0.3em;
+            content: "\00bb";
+        }
+
+        .trail-items li:last-of-type::after {
+            display: none;
+        }
+
+        h1,
+        .entry-content h1,
+        h2,
+        .entry-content h2,
+        h3,
+        .entry-content h3,
+        h4,
+        .entry-content h4,
+        h5,
+        .entry-content h5,
+        h6,
+        .entry-content h6 {
+            color: var(--ast-global-color-2);
+        }
+
+        .entry-title a {
+            color: var(--ast-global-color-2);
+        }
+
+        @media (max-width:921px) {
+
+            .ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row>*:first-child,
+            .ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row>*:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width:544px) {
+
+            .ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row>*:first-child,
+            .ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row>*:last-child {
+                grid-column: 1 / -1;
+            }
+        }
+
+        .ast-builder-layout-element[data-section="title_tagline"] {
+            display: flex;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"] {
+                display: flex;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"] {
+                display: flex;
+            }
+        }
+
+        .ast-builder-menu-1 {
+            font-family: inherit;
+            font-weight: inherit;
+        }
+
+        .ast-builder-menu-1 .sub-menu,
+        .ast-builder-menu-1 .inline-on-mobile .sub-menu {
+            border-top-width: 2px;
+            border-bottom-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            border-color: var(--ast-global-color-0);
+            border-style: solid;
+        }
+
+        .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
+        .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
+            margin-top: 0px;
+        }
+
+        .ast-desktop .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu:before,
+        .ast-desktop .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper:before {
+            height: calc(0px + 5px);
+        }
+
+        .ast-desktop .ast-builder-menu-1 .menu-item .sub-menu .menu-link {
+            border-style: none;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children>.ast-menu-toggle {
+                top: 0;
+            }
+
+            .ast-builder-menu-1 .inline-on-mobile .menu-item.menu-item-has-children>.ast-menu-toggle {
+                right: -15px;
+            }
+
+            .ast-builder-menu-1 .menu-item-has-children>.menu-link:after {
+                content: unset;
+            }
+
+            .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
+            .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children>.ast-menu-toggle {
+                top: 0;
+            }
+
+            .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
+            .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
+                margin-top: 0;
+            }
+        }
+
+        .ast-builder-menu-1 {
+            display: flex;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .ast-builder-menu-1 {
+                display: flex;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .ast-builder-menu-1 {
+                display: flex;
+            }
+        }
+
+        .site-below-footer-wrap {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+            background-color: #eeeeee;
+            ;
+            min-height: 80px;
+            border-style: solid;
+            border-width: 0px;
+            border-top-width: 1px;
+            border-top-color: var(--ast-global-color-6);
+        }
+
+        .site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row {
+            max-width: 1200px;
+            min-height: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row,
+        .site-below-footer-wrap[data-section="section-below-footer-builder"] .site-footer-section {
+            align-items: flex-start;
+        }
+
+        .site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-inline .site-footer-section {
+            display: flex;
+            margin-bottom: 0;
+        }
+
+        .ast-builder-grid-row-full .ast-builder-grid-row {
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width:921px) {
+            .site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-inline .site-footer-section {
+                display: flex;
+                margin-bottom: 0;
+            }
+
+            .site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-stack .site-footer-section {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .ast-builder-grid-row-container.ast-builder-grid-row-tablet-full .ast-builder-grid-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width:544px) {
+            .site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-inline .site-footer-section {
+                display: flex;
+                margin-bottom: 0;
+            }
+
+            .site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-stack .site-footer-section {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .ast-builder-grid-row-container.ast-builder-grid-row-mobile-full .ast-builder-grid-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+            display: grid;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+                display: grid;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+                display: grid;
+            }
+        }
+
+        .ast-footer-copyright {
+            text-align: center;
+        }
+
+        .ast-footer-copyright {
+            color: var(--ast-global-color-3);
+        }
+
+        @media (max-width:921px) {
+            .ast-footer-copyright {
+                text-align: center;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-footer-copyright {
+                text-align: center;
+            }
+        }
+
+        .ast-footer-copyright.ast-builder-layout-element {
+            display: flex;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .ast-footer-copyright.ast-builder-layout-element {
+                display: flex;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .ast-footer-copyright.ast-builder-layout-element {
+                display: flex;
+            }
+        }
+
+        .footer-widget-area.widget-area.site-footer-focus-item {
+            width: auto;
+        }
+
+        .elementor-widget-heading .elementor-heading-title {
+            margin: 0;
+        }
+
+        .elementor-page .ast-menu-toggle {
+            color: unset !important;
+            background: unset !important;
+        }
+
+        .elementor-post.elementor-grid-item.hentry {
+            margin-bottom: 0;
+        }
+
+        .woocommerce div.product .elementor-element.elementor-products-grid .related.products ul.products li.product,
+        .elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product {
+            width: auto;
+            margin: 0;
+            float: none;
+        }
+
+        .elementor-toc__list-wrapper {
+            margin: 0;
+        }
+
+        body .elementor hr {
+            background-color: #ccc;
+            margin: 0;
+        }
+
+        .ast-left-sidebar .elementor-section.elementor-section-stretched,
+        .ast-right-sidebar .elementor-section.elementor-section-stretched {
+            max-width: 100%;
+            left: 0 !important;
+        }
+
+        .elementor-posts-container [CLASS*="ast-width-"] {
+            width: 100%;
+        }
+
+        .elementor-template-full-width .ast-container {
+            display: block;
+        }
+
+        .elementor-screen-only,
+        .screen-reader-text,
+        .screen-reader-text span,
+        .ui-helper-hidden-accessible {
+            top: 0 !important;
+        }
+
+        @media (max-width:544px) {
+            .elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product {
+                width: auto;
+                margin: 0;
+            }
+
+            .elementor-element .woocommerce .woocommerce-result-count {
+                float: none;
+            }
+        }
+
+        .ast-header-break-point .main-header-bar {
+            border-bottom-width: 1px;
+        }
+
+        @media (min-width:922px) {
+            .main-header-bar {
+                border-bottom-width: 1px;
+            }
+        }
+
+        .main-header-menu .menu-item,
+        #astra-footer-menu .menu-item,
+        .main-header-bar .ast-masthead-custom-menu-items {
+            -js-display: flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -moz-box-orient: vertical;
+            -moz-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .main-header-menu>.menu-item>.menu-link,
+        #astra-footer-menu>.menu-item>.menu-link {
+            height: 100%;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -js-display: flex;
+            display: flex;
+        }
+
+        .ast-header-break-point .main-navigation ul .menu-item .menu-link .icon-arrow:first-of-type svg {
+            top: .2em;
+            margin-top: 0px;
+            margin-left: 0px;
+            width: .65em;
+            transform: translate(0, -2px) rotateZ(270deg);
+        }
+
+        .ast-mobile-popup-content .ast-submenu-expanded>.ast-menu-toggle {
+            transform: rotateX(180deg);
+            overflow-y: auto;
+        }
+
+        @media (min-width:922px) {
+            .ast-builder-menu .main-navigation>ul>li:last-child a {
+                margin-right: 0;
+            }
+        }
+
+        .ast-separate-container .ast-article-inner {
+            background-color: transparent;
+            background-image: none;
+        }
+
+        .ast-separate-container .ast-article-post {
+            background-color: var(--ast-global-color-5);
+            ;
+        }
+
+        @media (max-width:921px) {
+            .ast-separate-container .ast-article-post {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-separate-container .ast-article-post {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        .ast-separate-container .ast-article-single:not(.ast-related-post),
+        .woocommerce.ast-separate-container .ast-woocommerce-container,
+        .ast-separate-container .error-404,
+        .ast-separate-container .no-results,
+        .single.ast-separate-container .site-main .ast-author-meta,
+        .ast-separate-container .related-posts-title-wrapper,
+        .ast-separate-container .comments-count-wrapper,
+        .ast-box-layout.ast-plain-container .site-content,
+        .ast-padded-layout.ast-plain-container .site-content,
+        .ast-separate-container .ast-archive-description,
+        .ast-separate-container .comments-area .comment-respond,
+        .ast-separate-container .comments-area .ast-comment-list li,
+        .ast-separate-container .comments-area .comments-title {
+            background-color: var(--ast-global-color-5);
+            ;
+        }
+
+        @media (max-width:921px) {
+
+            .ast-separate-container .ast-article-single:not(.ast-related-post),
+            .woocommerce.ast-separate-container .ast-woocommerce-container,
+            .ast-separate-container .error-404,
+            .ast-separate-container .no-results,
+            .single.ast-separate-container .site-main .ast-author-meta,
+            .ast-separate-container .related-posts-title-wrapper,
+            .ast-separate-container .comments-count-wrapper,
+            .ast-box-layout.ast-plain-container .site-content,
+            .ast-padded-layout.ast-plain-container .site-content,
+            .ast-separate-container .ast-archive-description {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        @media (max-width:544px) {
+
+            .ast-separate-container .ast-article-single:not(.ast-related-post),
+            .woocommerce.ast-separate-container .ast-woocommerce-container,
+            .ast-separate-container .error-404,
+            .ast-separate-container .no-results,
+            .single.ast-separate-container .site-main .ast-author-meta,
+            .ast-separate-container .related-posts-title-wrapper,
+            .ast-separate-container .comments-count-wrapper,
+            .ast-box-layout.ast-plain-container .site-content,
+            .ast-padded-layout.ast-plain-container .site-content,
+            .ast-separate-container .ast-archive-description {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        .ast-separate-container.ast-two-container #secondary .widget {
+            background-color: var(--ast-global-color-5);
+            ;
+        }
+
+        @media (max-width:921px) {
+            .ast-separate-container.ast-two-container #secondary .widget {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-separate-container.ast-two-container #secondary .widget {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        .ast-plain-container,
+        .ast-page-builder-template {
+            background-color: var(--ast-global-color-5);
+            ;
+        }
+
+        @media (max-width:921px) {
+
+            .ast-plain-container,
+            .ast-page-builder-template {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        @media (max-width:544px) {
+
+            .ast-plain-container,
+            .ast-page-builder-template {
+                background-color: var(--ast-global-color-5);
+                ;
+            }
+        }
+
+        .ast-mobile-header-content>*,
+        .ast-desktop-header-content>* {
+            padding: 10px 0;
+            height: auto;
+        }
+
+        .ast-mobile-header-content>*:first-child,
+        .ast-desktop-header-content>*:first-child {
+            padding-top: 10px;
+        }
+
+        .ast-mobile-header-content>.ast-builder-menu,
+        .ast-desktop-header-content>.ast-builder-menu {
+            padding-top: 0;
+        }
+
+        .ast-mobile-header-content>*:last-child,
+        .ast-desktop-header-content>*:last-child {
+            padding-bottom: 0;
+        }
+
+        .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search label,
+        .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search label {
+            width: 100%;
+        }
+
+        .ast-desktop-header-content .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before {
+            transform: rotateX(180deg);
+        }
+
+        #ast-desktop-header .ast-desktop-header-content,
+        .ast-mobile-header-content .ast-search-icon,
+        .ast-desktop-header-content .ast-search-icon,
+        .ast-mobile-header-wrap .ast-mobile-header-content,
+        .ast-main-header-nav-open.ast-popup-nav-open .ast-mobile-header-wrap .ast-mobile-header-content,
+        .ast-main-header-nav-open.ast-popup-nav-open .ast-desktop-header-content {
+            display: none;
+        }
+
+        .ast-main-header-nav-open.ast-header-break-point #ast-desktop-header .ast-desktop-header-content,
+        .ast-main-header-nav-open.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content {
+            display: block;
+        }
+
+        .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up>.menu-item>.sub-menu,
+        .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up>.menu-item .menu-item>.sub-menu,
+        .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down>.menu-item>.sub-menu,
+        .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down>.menu-item .menu-item>.sub-menu,
+        .ast-desktop .ast-desktop-header-content .astra-menu-animation-fade>.menu-item>.sub-menu,
+        .ast-desktop .ast-desktop-header-content .astra-menu-animation-fade>.menu-item .menu-item>.sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation {
+            width: unset;
+            margin: unset;
+        }
+
+        .ast-mobile-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle,
+        .ast-desktop-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle {
+            left: calc(20px - 0.907em);
+            right: auto;
+        }
+
+        .ast-mobile-header-content .ast-search-menu-icon,
+        .ast-mobile-header-content .ast-search-menu-icon.slide-search,
+        .ast-desktop-header-content .ast-search-menu-icon,
+        .ast-desktop-header-content .ast-search-menu-icon.slide-search {
+            width: 100%;
+            position: relative;
+            display: block;
+            right: auto;
+            transform: none;
+        }
+
+        .ast-mobile-header-content .ast-search-menu-icon.slide-search .search-form,
+        .ast-mobile-header-content .ast-search-menu-icon .search-form,
+        .ast-desktop-header-content .ast-search-menu-icon.slide-search .search-form,
+        .ast-desktop-header-content .ast-search-menu-icon .search-form {
+            right: 0;
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            top: auto;
+            transform: none;
+            padding: 0;
+            display: block;
+            overflow: hidden;
+        }
+
+        .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,
+        .ast-mobile-header-content .ast-search-menu-icon .search-field,
+        .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,
+        .ast-desktop-header-content .ast-search-menu-icon .search-field {
+            width: 100%;
+            padding-right: 5.5em;
+        }
+
+        .ast-mobile-header-content .ast-search-menu-icon .search-submit,
+        .ast-desktop-header-content .ast-search-menu-icon .search-submit {
+            display: block;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
+            padding: 0 1em;
+            border-radius: 0;
+        }
+
+        .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {
+            padding-left: 30px;
+        }
+
+        .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation .sub-menu .menu-item .menu-item .menu-link {
+            padding-left: 40px;
+        }
+
+        .ast-mobile-popup-drawer.active .ast-mobile-popup-inner {
+            background-color: #ffffff;
+            ;
+        }
+
+        .ast-mobile-header-wrap .ast-mobile-header-content,
+        .ast-desktop-header-content {
+            background-color: #ffffff;
+            ;
+        }
+
+        .ast-mobile-popup-content>*,
+        .ast-mobile-header-content>*,
+        .ast-desktop-popup-content>*,
+        .ast-desktop-header-content>* {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .content-align-flex-start .ast-builder-layout-element {
+            justify-content: flex-start;
+        }
+
+        .content-align-flex-start .main-header-menu {
+            text-align: left;
+        }
+
+        .ast-mobile-popup-drawer.active .menu-toggle-close {
+            color: #3a3a3a;
+        }
+
+        .ast-mobile-header-wrap .ast-primary-header-bar,
+        .ast-primary-header-bar .site-primary-header-wrap {
+            min-height: 80px;
+        }
+
+        .ast-desktop .ast-primary-header-bar .main-header-menu>.menu-item {
+            line-height: 80px;
+        }
+
+        .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-primary-header-bar,
+        .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-below-header-bar,
+        .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-above-header-bar {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .ast-header-break-point .ast-primary-header-bar {
+            border-bottom-width: 1px;
+            border-bottom-color: #eaeaea;
+            border-bottom-style: solid;
+        }
+
+        @media (min-width:922px) {
+            .ast-primary-header-bar {
+                border-bottom-width: 1px;
+                border-bottom-color: #eaeaea;
+                border-bottom-style: solid;
+            }
+        }
+
+        .ast-primary-header-bar {
+            background-color: #ffffff;
+            ;
+        }
+
+        .ast-primary-header-bar {
+            display: block;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .ast-primary-header-bar {
+                display: grid;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .ast-primary-header-bar {
+                display: grid;
+            }
+        }
+
+        [data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal {
+            color: var(--ast-global-color-0);
+            border: none;
+            background: transparent;
+        }
+
+        [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--ast-global-color-0);
+        }
+
+        [data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-wrap .mobile-menu {
+            color: var(--ast-global-color-0);
+        }
+
+        .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+            top: 0;
+        }
+
+        .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
+            content: unset;
+        }
+
+        .ast-hfb-header .ast-builder-menu-mobile .main-header-menu,
+        .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .menu-link,
+        .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .sub-menu .menu-link {
+            border-style: none;
+        }
+
+        .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+            top: 0;
+        }
+
+        @media (max-width:921px) {
+            .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+                top: 0;
+            }
+
+            .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
+                content: unset;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+                top: 0;
+            }
+        }
+
+        .ast-builder-menu-mobile .main-navigation {
+            display: block;
+        }
+
+        @media (max-width:921px) {
+            .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
+                display: block;
+            }
+        }
+
+        @media (max-width:544px) {
+            .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
+                display: block;
+            }
+        }
+
+        :root {
+            --e-global-color-astglobalcolor0: #0170B9;
+            --e-global-color-astglobalcolor1: #3a3a3a;
+            --e-global-color-astglobalcolor2: #3a3a3a;
+            --e-global-color-astglobalcolor3: #4B4F58;
+            --e-global-color-astglobalcolor4: #F5F5F5;
+            --e-global-color-astglobalcolor5: #FFFFFF;
+            --e-global-color-astglobalcolor6: #E5E5E5;
+            --e-global-color-astglobalcolor7: #424242;
+            --e-global-color-astglobalcolor8: #000000;
+        }
     </style>
     <style id="wp-emoji-styles-inline-css">
         img.wp-smiley,
@@ -3968,7 +4095,7 @@
             --e-global-color-secondary: #54595F;
             --e-global-color-text: #7A7A7A;
             --e-global-color-accent: #61CE70;
-            --e-global-color-c2757a3: #191E37;
+            --e-global-color-c2757a3: #ffffff;
             --e-global-color-62c6c10: #C02A2A;
             --e-global-color-f8a1b99: #D8D8D8;
             --e-global-color-50337d4: #40445c;
@@ -4092,7 +4219,7 @@
                                     }
 
                                     .elementor-widget-image img {
-                                        vertical-align: middle;
+                                        vertical-align: middle; 
                                         display: inline-block
                                     }
                                 </style> <img width="1024" height="257" src="{{ asset('image/logo.png') }}"
@@ -4179,19 +4306,19 @@
 
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-f97ce70 elementor-widget elementor-widget-button"
-                                data-id="f97ce70" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-md"
-                                            href="#articles">
-                                            <span class="elementor-button-content-wrapper">
-                                                <span class="elementor-button-text">Aller au catalogue </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            {{-- style pour le boutton dans le header --}}
+                            <style>
+                                .btn-primary:hover {
+                                    background-color: #396491;
+                                    /* Changez la couleur de fond lors du survol */
+                                    color: #fff;
+                                    /* Changez la couleur du texte lors du survol */
+                                }
+                            </style>
+                            <a class="btn btn-light btn-lg" href="#articles">
+                                Aller au catalogue
+                            </a>
+
                             <div class="elementor-element elementor-element-aa1c7d1 elementor-widget elementor-widget-html"
                                 data-id="aa1c7d1" data-element_type="widget" data-widget_type="html.default">
                                 <div class="elementor-widget-container">
@@ -4352,6 +4479,87 @@
                             </div>
                         </div>
                     </div>
+                    <style>
+                        .article-card {
+                            padding: 1rem;
+                            transition: all 0.3s ease-in-out;
+                            position: relative;
+                            cursor: pointer;
+                            background-color: rgba(255, 255, 255, 1);
+                            height: 200px;
+                            /* Ajustez la hauteur en fonction de vos besoins */
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            border-radius: 3px;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .article-card:hover {
+                            background-color: rgba(0, 0, 0, 0.3);
+                            /* Changez la couleur de fond en sombre et transparent lors du survol */
+                        }
+
+                        .article-card:hover .article-name {
+                            color: #fff;
+                            /* Changez la couleur du texte du nom de l'article en blanc lors du survol */
+                            filter: blur(2px);
+                            /* Ajoutez un effet de flou au nom de l'article lors du survol */
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            /* Centre le nom de l'article au milieu de la carte */
+                        }
+
+                        .article-price-container {
+                            opacity: 0;
+                            transition: all 0.3s ease-in-out;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-align: center;
+                        }
+
+                        .article-card:hover .article-price-container {
+                            opacity: 1;
+                        }
+
+                        .article-price {
+                            color: #000;
+                            /* Changez la couleur du texte du prix en noir */
+                        }
+
+                        .category-name {
+                            color: #C02A2A;
+                            /* Changez la couleur du texte des noms de catégorie en rouge */
+                            font-size: 1.5rem;
+                            /* Ajustez la taille du texte des noms de catégorie */
+                            text-align: center;
+                            /* Centre les noms de catégorie */
+                            margin-bottom: 1rem;
+                            /* Ajoutez une marge en dessous des noms de catégorie */
+                        }
+
+                        .article-card:hover .article-duration {
+                            opacity: 0;
+                        }
+
+                        .pay-button {
+                            display: none;
+                            position: absolute;
+                            bottom: 1rem;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        .article-card:hover .pay-button,
+                        .article-card.clicked .pay-button {
+                            display: block;
+                        }
+                    </style>
                     <div class="elementor-element elementor-element-ef65e4c e-con-full e-flex e-con" data-id="ef65e4c"
                         data-element_type="container" id="articles"
                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;full&quot;}">
@@ -4359,116 +4567,143 @@
                             data-id="1de8288" data-element_type="widget"
                             data-settings="{&quot;rotating_text&quot;:&quot;Mission&quot;,&quot;rotate_iteration_delay&quot;:1500,&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;flip&quot;,&quot;loop&quot;:&quot;yes&quot;}"
                             data-widget_type="animated-headline.default">
-                            <div class="elementor-widget-container">
-
+                            <div class="articles-container">
                                 @foreach ($articles->groupBy('categorie.id') as $categorie => $articlesByCategorie)
-                                    <h3 class="elementor-headline elementor-headline-animation-type-flip">
+                                    <br>
 
-                                        <span style="color: #C02A2A"
-                                            class="elementor-headline-dynamic-text elementor-headline-text-active"
-                                            data-nom-categorie="{{ $articlesByCategorie->first()->categorie->nom }}">
-                                            {{ $articlesByCategorie->first()->categorie->nom }} </span>
-                                        </span>
-                                    </h3><br>
+                                    <h1 class="category-name"
+                                        data-nom-categorie="{{ $articlesByCategorie->first()->categorie->nom }}">
+                                        {{ strtoupper($articlesByCategorie->first()->categorie->nom) }}
+                                    </h1>
 
                                     <div class="row">
                                         @foreach ($articlesByCategorie as $article)
-                                            <div class="col">
-                                                <div class="elementor-element elementor-element-08e5fa8 e-con-full   e-flex e-con"
-                                                    data-id="08e5fa8" data-element_type="container"
-                                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-                                                    <div class="elementor-element elementor-element-26c844f e-flex e-con-boxed e-con"
-                                                        data-id="26c844f" data-element_type="container"
-                                                        data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                <div class="article-card"
+                                                    data-nom-article="{{ $article->nom_article }}"
+                                                    data-prix="{{ $article->prix }}">
+                                                    <h3 class="article-name">{{ strtoupper($article->nom_article) }}
+                                                    </h3>
+                                                    <p class="article-duration">/{{ $article->duree }}</p>
+                                                    <div class="article-price-container">
+                                                        <h4 class="article-price">{{ $article->prix }}</h4>
+                                                        <p class="price-info"> <strong>CFA/HT</strong> </p>
                                                     </div>
-                                                    <div class="elementor-element elementor-element-a88c672 elementor-widget elementor-widget-heading"
-                                                        data-id="a88c672" data-element_type="widget"
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2 class="elementor-heading-title elementor-size-default"
-                                                                data-nom-article="{{ $article->nom_article }}">
-                                                                {{ strtoupper($article->nom_article) }}
-                                                            </h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-b040991 e-flex e-con-boxed e-con"
-                                                        data-id="b040991" data-element_type="container"
-                                                        data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-                                                        <div class="e-con-inner">
-                                                            <div class="elementor-element elementor-element-ef8f197 elementor-widget elementor-widget-text-editor"
-                                                                data-id="ef8f197" data-element_type="widget"
-                                                                data-widget_type="text-editor.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <p>/{{ $article->duree }}</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-element elementor-element-3f279cb elementor-widget elementor-widget-heading"
-                                                                data-id="3f279cb" data-element_type="widget"
-                                                                data-widget_type="heading.default">
-                                                                <div class="elementor-widget-container">
-                                                                    <h2 id="montant_transaction"
-                                                                        class="elementor-heading-title elementor-size-default"
-                                                                        data-prix="{{ $article->prix }}">
-                                                                        {{ $article->prix }}
-                                                                    </h2>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-b8d8426 elementor-widget elementor-widget-text-editor"
-                                                        data-id="b8d8426" data-element_type="widget"
-                                                        data-widget_type="text-editor.default">
-                                                        <div class="elementor-widget-container">
-                                                            <p>CFA/HT</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-659b231 elementor-widget elementor-widget-button"
-                                                        data-id="659b231" data-element_type="widget"
-                                                        data-widget_type="button.default">
-                                                        <div class="elementor-widget-container">
-                                                          <div class="elementor-button-wrapper">
+                                                    <button class="pay-button" data-bs-toggle="modal"
+                                                        data-bs-target="#modalForm"
+                                                        data-article-id="{{ $article->id }}"
+                                                        data-article-name="{{ $article->nom_article }}"
+                                                        data-article-price="{{ $article->prix }}">Commander</button>
 
-
-                                                                <script src="https://cdn.kkiapay.me/k.js"></script>
-
-                                                                @php
-                                                                    $state = [
-                                                                        'article' => $article->nom_article,
-                                                                        'categorie' => $articlesByCategorie->first()
-                                                                            ->categorie->nom,
-                                                                    ];
-                                                                
-                                                                    $stateJson = json_encode($state);
-
-
-                                                                @endphp
-
-                                                                @if ($article && $articlesByCategorie)
-                                                                    <kkiapay-widget amount="{{ $article->prix }}"
-                                                                        key="cb876650e192fdf79d12342d023a6f4ebe257de4"
-                                                                        position="center" sandbox=""
-                                                                        data='<?php echo $stateJson; ?>'
-                                                                        callback="http://127.0.0.1:8000/paysuccess/{{ $article->id }}">
-                                                                    </kkiapay-widget>
-                                                                @endif
-
-
-
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
                                                 </div>
                                             </div>
                                         @endforeach
                                     </div>
+                                    <style>
+                                        #barre {
+
+                                            width: 100%;
+                                            height: 2px;
+                                            /* Vous pouvez ajuster la hauteur selon vos besoins */
+                                            background-color: black;
+                                            margin: 40px 0;
+
+                                            /* Vous pouvez ajuster la marge selon vos besoins */
+                                        }
+                                    </style>
+                                    <div id=barre>
+
+                                    </div>
                                 @endforeach
                             </div>
+
                         </div>
 
                     </div>
-                    <div class="elementor-element elementor-element-ef65e4c e-con-full e-flex e-con" data-id="ef65e4c"
+                    <div class="modal fade" id="modalForm" tabindex="-1" role="dialog"
+                        aria-labelledby="modalFormLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalFormLabel">Informations de l'article</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Nom de l'article :</strong> <span id="article-name"></span></p>
+                                    <p><strong>Prix de l'article :</strong> <span id="article-price"></span></p>
+                                    <p><strong>Nombre de mois :</strong> <input type="number" id="quantity"
+                                            name="quantite" value="1" min="1"></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                    <script src="https://cdn.kkiapay.me/k.js"></script>
+                                    <div id="kkiapay-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="https://cdn.kkiapay.me/k.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const payButtons = document.querySelectorAll('.pay-button');
+                            const quantityInput = document.getElementById('quantity');
+                            const kkiapayContainer = document.getElementById('kkiapay-container');
+
+                            let currentArticle = null;
+
+                            payButtons.forEach(button => {
+                                button.addEventListener('click', function() {
+                                    const articleName = this.getAttribute('data-article-name');
+                                    const articlePrice = parseFloat(this.getAttribute('data-article-price'));
+                                    const articleId = this.getAttribute('data-article-id');
+                                    const articleCategorie = this.getAttribute('data-article-categorie');
+
+                                    document.getElementById('article-name').textContent = articleName;
+                                    document.getElementById('article-price').textContent = articlePrice.toFixed(2);
+
+                                    currentArticle = {
+                                        id: articleId,
+                                        name: articleName,
+                                        price: articlePrice,
+                                        categorie: articleCategorie
+                                    };
+
+                                    updateKkiapayWidget();
+                                });
+                            });
+
+                            quantityInput.addEventListener('input', updateKkiapayWidget);
+
+                            function updateKkiapayWidget() {
+                                if (!currentArticle) return;
+
+                                const quantity = parseInt(quantityInput.value) || 1;
+                                const totalAmount = currentArticle.price * quantity;
+
+                                const state = {
+                                    article: currentArticle.name,
+                                    categorie: currentArticle.categorie,
+                                    quantite: quantity
+                                };
+
+                                kkiapayContainer.innerHTML = '';
+                                const widget = document.createElement('kkiapay-widget');
+                                widget.setAttribute('amount', totalAmount.toFixed(2));
+                                widget.setAttribute('key', 'cb876650e192fdf79d12342d023a6f4ebe257de4');
+                                widget.setAttribute('position', 'center');
+                                widget.setAttribute('sandbox', 'false');
+                                widget.setAttribute('data', JSON.stringify(state));
+                                widget.setAttribute('callback', `https://caisse.savplus.net/paysuccess/${currentArticle.id}`);
+                                kkiapayContainer.appendChild(widget);
+                            }
+                        });
+                    </script>
+
+
+                    {{-- <div class="elementor-element elementor-element-ef65e4c e-con-full e-flex e-con" data-id="ef65e4c"
                         data-element_type="container" id="Mission"
                         data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;full&quot;}">
                         <div class="elementor-element elementor-element-1de8288 animated-slow elementor-headline--style-rotate elementor-widget__width-initial elementor-widget elementor-widget-animated-headline animated fadeInDown"
@@ -4502,14 +4737,14 @@
                                 data-widget_type="image.default">
                                 <div class="elementor-widget-container">
                                     <img decoding="async" width="350" height="200"
-                                        src="{{ asset('image/article404.jpg') }}"
+                                        src="http://caisse.savplus.net/image/article404.jpg"
                                         class="attachment-large size-large wp-image-26" alt=""
                                         style="border-radius: 50%;">
                                 </div>
                             </div>
                         </div>
 
-                    </div>
+                    </div> --}}
 
                     <style>
                         .custom-modal .modal-dialog {
@@ -4597,6 +4832,7 @@
                         }
                     </style>
 
+                    {{--
 <div class="modal fade custom-modal" id="formModal" tabindex="-1" role="dialog"
 aria-labelledby="formModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
@@ -4682,422 +4918,454 @@ aria-labelledby="formModalLabel" aria-hidden="true">
                         const formData = new FormData(document.getElementById('article-form'));
 
                         fetch('{{ route('store.otherArticle') }}', {
-                                method: 'POST',
-                                body: formData
-                            })
-                            .then(response => response.json())
-                            .then(data => {
-                                const articleId = data.id;
-                                const articleName = formData.get('article');
-                                const categoryName = 'autres';
-                                const callbackURL = 'http://127.0.0.1:8000/othersuccess/' + articleId;
+                    method: 'POST',
+                    body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                    const articleId = data.id;
+                    const articleName = formData.get('article');
+                    const categoryName = 'autres';
+                    const callbackURL = 'http://caisse.savplus.net/othersuccess/' + articleId;
 
-                                const jsonData = {
-                                    article: articleName,
-                                    categorie: categoryName
-                                };
+                    const jsonData = {
+                    article: articleName,
+                    categorie: categoryName
+                    };
 
-                                openKkiapayWidget({
-                                    amount: formData.get('prix'),
-                                    data: JSON.stringify(jsonData),
-                                    callback: callbackURL,
-                                    position: "center",
-                                    theme: "#cc6666",
-                                    
-                                    key: "cb876650e192fdf79d12342d023a6f4ebe257de4"
-                                });
-                            })
-                            .catch(error => {
-                                console.error('Erreur lors de l\'enregistrement de l\'article:', error);
-                            });
+                    openKkiapayWidget({
+                    amount: formData.get('prix'),
+                    data: JSON.stringify(jsonData),
+                    callback: callbackURL,
+                    position: "center",
+                    theme: "#cc6666",
+
+                    key: "cb876650e192fdf79d12342d023a6f4ebe257de4"
                     });
-                });
-            </script>
-            <script src="https://cdn.kkiapay.me/k.js"></script>
+                    })
+                    .catch(error => {
+                    console.error('Erreur lors de l\'enregistrement de l\'article:', error);
+                    });
+                    });
+                    });
+                    </script>
+                    <script src="https://cdn.kkiapay.me/k.js"></script>
 
 
 
 
 
-        </div>
-    </div>
-</div>
-</div>
-                </div>
-            </div> <!-- ast-container -->
-        </div><!-- #content -->
-        <div data-elementor-type="footer" data-elementor-id="235"
-            class="elementor elementor-235 elementor-location-footer" data-elementor-post-type="elementor_library">
-            <div class="elementor-element elementor-element-9d83a38 e-flex e-con-boxed e-con" data-id="9d83a38"
-                data-element_type="container"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-2d3ae60 e-con-full e-flex e-con" data-id="2d3ae60"
-                        data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                        <div class="elementor-element elementor-element-f21539c elementor-widget elementor-widget-theme-site-logo elementor-widget-image"
-                            data-id="f21539c" data-element_type="widget" data-widget_type="theme-site-logo.default">
-                            <div class="elementor-widget-container">
-                                <a href="https://savplus.net">
-                                    <img width="2084" height="524" src="{{ asset('image/logo.png') }}"
-                                        class="attachment-full size-full wp-image-214" alt="" loading="lazy"
-                                        srcset="{{ asset('image/logo.png') }}"
-                                        sizes="(max-width: 2084px) 100vw, 2084px"> </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-817c06e e-con-full e-flex e-con" data-id="817c06e"
-                        data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-
-                        <div class="elementor-element elementor-element-fa8f9c9 e-con-full e-flex e-con"
-                            data-id="fa8f9c9" data-element_type="container"
-                            data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                            <div class="elementor-element elementor-element-7e5db2d elementor-widget elementor-widget-text-editor"
-                                data-id="7e5db2d" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>Info</p>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-fa6d6a2 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                data-id="fa6d6a2" data-element_type="widget" data-widget_type="icon-list.default">
-                                <div class="elementor-widget-container">
-                                    <ul class="elementor-icon-list-items">
-                                        <li class="elementor-icon-list-item"
-                                            style="display: flex; align-items: center;">
-                                            <embed type="image/svg+xml" src="{{ asset('svg/mail.svg') }}"
-                                                class="attachment-full size-full wp-image-24" width="40"
-                                                height="40" style="margin-right: 10px;">
-                                            <span class="elementor-icon-list-text"
-                                                style="color: #F5F5F5;">contact@savplus.net</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item"
-                                            style="display: flex; align-items: center;">
-                                            <embed type="image/svg+xml" style="margin-right:40px;"
-                                                src="{{ asset('svg/phone.svg') }}"
-                                                class="attachment-full size-full wp-image-24" width="40"
-                                                height="40" style="margin-right: 10px;">
-                                            <span class="elementor-icon-list-text"
-                                                style="color: #F5F5F5;">(+229)20213759</span>
-                                        </li>
-                                        <li class="elementor-icon-list-item"
-                                            style="display: flex; align-items: center;">
-                                            <embed type="image/svg+xml" style="margin-right:40px;"
-                                                src="{{ asset('svg/phone.svg') }}"
-                                                class="attachment-full size-full wp-image-24" width="40"
-                                                height="40" style="margin-right: 10px;">
-                                            <span class="elementor-icon-list-text"
-                                                style="color: #F5F5F5;">(+229)69416666</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-ada5c26 e-con-full e-flex e-con" data-id="ada5c26"
-                        data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-                        <div class="elementor-element elementor-element-a85c2e7 elementor-widget elementor-widget-text-editor"
-                            data-id="a85c2e7" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container" style="color: #F5F5F5;">
-                                <p style="color: #F5F5F5;">Copyright 2024 © Savoir Plus</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div><!-- #page -->
-    <link rel="stylesheet" id="e-animations-css"
-        href="https://agence.savplus.net/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.14.1"
-        media="all">
-    <script id="astra-theme-js-js-extra">
-        var astra = {
-            "break_point": "921",
-            "isRtl": "",
-            "is_scroll_to_id": "",
-            "is_scroll_to_top": "",
-            "is_header_footer_builder_active": "1"
-        };
-    </script>
-    <script src="https://agence.savplus.net/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.8"
-        id="astra-theme-js-js"></script>
-    <script src="https://agence.savplus.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="https://agence.savplus.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js">
-    </script>
-    <script
-        src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1"
-        id="smartmenus-js"></script>
-    <script
-        src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.14.1"
-        id="elementor-pro-webpack-runtime-js"></script>
-    <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1"
-        id="elementor-webpack-runtime-js"></script>
-    <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1"
-        id="elementor-frontend-modules-js"></script>
-    <script src="https://agence.savplus.net/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2"
-        id="wp-polyfill-inert-js"></script>
-    <script src="https://agence.savplus.net/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0"
-        id="regenerator-runtime-js"></script>
-    <script src="https://agence.savplus.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js">
-    </script>
-    <script src="https://agence.savplus.net/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js">
-    </script>
-    <script src="https://agence.savplus.net/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js">
-    </script>
-    <script id="wp-i18n-js-after">
-        wp.i18n.setLocaleData({
-            'text direction\u0004ltr': ['ltr']
-        });
-    </script>
-    <script id="elementor-pro-frontend-js-before">
-        var ElementorProFrontendConfig = {
-            "ajaxurl": "https:\/\/agence.savplus.net\/wp-admin\/admin-ajax.php",
-            "nonce": "a2b3fb4f0c",
-            "urls": {
-                "assets": "https:\/\/agence.savplus.net\/wp-content\/plugins\/elementor-pro\/assets\/",
-                "rest": "https:\/\/agence.savplus.net\/index.php?rest_route=\/"
-            },
-            "shareButtonsNetworks": {
-                "facebook": {
-                    "title": "Facebook",
-                    "has_counter": true
-                },
-                "twitter": {
-                    "title": "Twitter"
-                },
-                "linkedin": {
-                    "title": "LinkedIn",
-                    "has_counter": true
-                },
-                "pinterest": {
-                    "title": "Pinterest",
-                    "has_counter": true
-                },
-                "reddit": {
-                    "title": "Reddit",
-                    "has_counter": true
-                },
-                "vk": {
-                    "title": "VK",
-                    "has_counter": true
-                },
-                "odnoklassniki": {
-                    "title": "OK",
-                    "has_counter": true
-                },
-                "tumblr": {
-                    "title": "Tumblr"
-                },
-                "digg": {
-                    "title": "Digg"
-                },
-                "skype": {
-                    "title": "Skype"
-                },
-                "stumbleupon": {
-                    "title": "StumbleUpon",
-                    "has_counter": true
-                },
-                "mix": {
-                    "title": "Mix"
-                },
-                "telegram": {
-                    "title": "Telegram"
-                },
-                "pocket": {
-                    "title": "Pocket",
-                    "has_counter": true
-                },
-                "xing": {
-                    "title": "XING",
-                    "has_counter": true
-                },
-                "whatsapp": {
-                    "title": "WhatsApp"
-                },
-                "email": {
-                    "title": "Email"
-                },
-                "print": {
-                    "title": "Print"
-                }
-            },
-            "facebook_sdk": {
-                "lang": "fr_FR",
-                "app_id": ""
-            },
-            "lottie": {
-                "defaultAnimationUrl": "https:\/\/agence.savplus.net\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
-            }
-        };
-    </script>
-    <script src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.14.1"
-        id="elementor-pro-frontend-js"></script>
-    <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
-        id="elementor-waypoints-js"></script>
-    <script src="https://agence.savplus.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js">
-    </script>
-    <script id="elementor-frontend-js-before">
-        var elementorFrontendConfig = {
-            "environmentMode": {
-                "edit": false,
-                "wpPreview": false,
-                "isScriptDebug": false
-            },
-            "i18n": {
-                "shareOnFacebook": "Partager sur Facebook",
-                "shareOnTwitter": "Partager sur Twitter",
-                "pinIt": "L\u2019\u00e9pingler",
-                "download": "T\u00e9l\u00e9charger",
-                "downloadImage": "T\u00e9l\u00e9charger une image",
-                "fullscreen": "Plein \u00e9cran",
-                "zoom": "Zoom",
-                "share": "Partager",
-                "playVideo": "Lire la vid\u00e9o",
-                "previous": "Pr\u00e9c\u00e9dent",
-                "next": "Suivant",
-                "close": "Fermer",
-                "a11yCarouselWrapperAriaLabel": "Carousel | Scroll horizontal: Fl\u00e8che gauche & droite",
-                "a11yCarouselPrevSlideMessage": "Diapositive pr\u00e9c\u00e9dente",
-                "a11yCarouselNextSlideMessage": "Diapositive suivante",
-                "a11yCarouselFirstSlideMessage": "Ceci est la premi\u00e8re diapositive",
-                "a11yCarouselLastSlideMessage": "Ceci est la derni\u00e8re diapositive",
-                "a11yCarouselPaginationBulletMessage": "Aller \u00e0 la diapositive"
-            },
-            "is_rtl": false,
-            "breakpoints": {
-                "xs": 0,
-                "sm": 480,
-                "md": 768,
-                "lg": 1025,
-                "xl": 1440,
-                "xxl": 1600
-            },
-            "responsive": {
-                "breakpoints": {
-                    "mobile": {
-                        "label": "Portrait mobile",
-                        "value": 767,
-                        "default_value": 767,
-                        "direction": "max",
-                        "is_enabled": true
-                    },
-                    "mobile_extra": {
-                        "label": "Mobile Paysage",
-                        "value": 880,
-                        "default_value": 880,
-                        "direction": "max",
-                        "is_enabled": false
-                    },
-                    "tablet": {
-                        "label": "Tablette en mode portrait",
-                        "value": 1024,
-                        "default_value": 1024,
-                        "direction": "max",
-                        "is_enabled": true
-                    },
-                    "tablet_extra": {
-                        "label": "Tablette en mode paysage",
-                        "value": 1200,
-                        "default_value": 1200,
-                        "direction": "max",
-                        "is_enabled": false
-                    },
-                    "laptop": {
-                        "label": "Portable",
-                        "value": 1366,
-                        "default_value": 1366,
-                        "direction": "max",
-                        "is_enabled": false
-                    },
-                    "widescreen": {
-                        "label": "\u00c9cran large",
-                        "value": 2400,
-                        "default_value": 2400,
-                        "direction": "min",
-                        "is_enabled": false
-                    }
-                }
-            },
-            "version": "3.14.1",
-            "is_static": false,
-            "experimentalFeatures": {
-                "e_dom_optimization": true,
-                "e_optimized_assets_loading": true,
-                "e_optimized_css_loading": true,
-                "a11y_improvements": true,
-                "additional_custom_breakpoints": true,
-                "container": true,
-                "theme_builder_v2": true,
-                "landing-pages": true,
-                "page-transitions": true,
-                "notes": true,
-                "loop": true,
-                "form-submissions": true,
-                "e_scroll_snap": true
-            },
-            "urls": {
-                "assets": "https:\/\/agence.savplus.net\/wp-content\/plugins\/elementor\/assets\/"
-            },
-            "swiperClass": "swiper-container",
-            "settings": {
-                "page": [],
-                "editorPreferences": []
-            },
-            "kit": {
-                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
-                "global_image_lightbox": "yes",
-                "lightbox_enable_counter": "yes",
-                "lightbox_enable_fullscreen": "yes",
-                "lightbox_enable_zoom": "yes",
-                "lightbox_enable_share": "yes",
-                "lightbox_title_src": "title",
-                "lightbox_description_src": "description"
-            },
-            "post": {
-                "id": 6,
-                "title": "Accueil%20-%20Agence%20web%20Savplus",
-                "excerpt": "",
-                "featuredImage": false
-            }
-        };
-    </script>
-    <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1"
-        id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
-    <script src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.14.1"
-        id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
-    <script>
-        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
-            .addEventListener("hashchange", function() {
-                var t, e = location.hash.substring(1);
-                /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i
-                    .test(t.tagName) || (t.tabIndex = -1), t.focus())
-            }, !1);
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Fonction pour initialiser le modal et gérer le clic sur le bouton déclencheur
-            function initModal() {
-                var $formModal = $('#formModal');
-                $formModal.modal({
-                    show: false
-                });
+    </div>
+    </div>
+    </div> <!-- ast-container -->
+    </div><!-- #content -->
 
-                $('#openModalBtn').click(function(e) {
-                    e.preventDefault();
-                    // Remplir le champ de catégorie avec la valeur "4"
-                    $('#form-field-ca').val(4);
-                    $formModal.modal('show');
-                });
+    --}}
+                    <div data-elementor-type="footer" data-elementor-id="235"
+                        class="elementor elementor-235 elementor-location-footer"
+                        data-elementor-post-type="elementor_library">
+                        <div class="elementor-element elementor-element-9d83a38 e-flex e-con-boxed e-con"
+                            data-id="9d83a38" data-element_type="container"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+                            <div class="e-con-inner">
+                                <div class="elementor-element elementor-element-2d3ae60 e-con-full e-flex e-con"
+                                    data-id="2d3ae60" data-element_type="container"
+                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                                    <div class="elementor-element elementor-element-f21539c elementor-widget elementor-widget-theme-site-logo elementor-widget-image"
+                                        data-id="f21539c" data-element_type="widget"
+                                        data-widget_type="theme-site-logo.default">
+                                        <div class="elementor-widget-container">
+                                            <a href="https://savplus.net">
+                                                <img width="2084" height="524"
+                                                    src="{{ asset('image/logo.png') }}"
+                                                    class="attachment-full size-full wp-image-214" alt=""
+                                                    loading="lazy" srcset="{{ asset('image/logo.png') }}"
+                                                    sizes="(max-width: 2084px) 100vw, 2084px"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-817c06e e-con-full e-flex e-con"
+                                    data-id="817c06e" data-element_type="container"
+                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 
-                $formModal.on('hidden.bs.modal', function() {
-                    // Réinitialiser le contenu du formulaire ici si nécessaire
-                });
-            }
+                                    <div class="elementor-element elementor-element-fa8f9c9 e-con-full e-flex e-con"
+                                        data-id="fa8f9c9" data-element_type="container"
+                                        data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                                        <div class="elementor-element elementor-element-7e5db2d elementor-widget elementor-widget-text-editor"
+                                            data-id="7e5db2d" data-element_type="widget"
+                                            data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>Info</p>
+                                            </div>
+                                        </div>
+                                        <div class="elementor-element elementor-element-fa6d6a2 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                            data-id="fa6d6a2" data-element_type="widget"
+                                            data-widget_type="icon-list.default">
+                                            <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                    <li class="elementor-icon-list-item"
+                                                        style="display: flex; align-items: center;">
+                                                        <embed type="image/svg+xml" src="{{ asset('svg/mail.svg') }}"
+                                                            class="attachment-full size-full wp-image-24"
+                                                            width="40" height="40"
+                                                            style="margin-right: 10px;">
+                                                        <span class="elementor-icon-list-text"
+                                                            style="color: #F5F5F5;">contact@savplus.net</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item"
+                                                        style="display: flex; align-items: center;">
+                                                        <embed type="image/svg+xml" style="margin-right:40px;"
+                                                            src="{{ asset('svg/phone.svg') }}"
+                                                            class="attachment-full size-full wp-image-24"
+                                                            width="40" height="40"
+                                                            style="margin-right: 10px;">
+                                                        <span class="elementor-icon-list-text"
+                                                            style="color: #F5F5F5;">(+229)20213759</span>
+                                                    </li>
+                                                    <li class="elementor-icon-list-item"
+                                                        style="display: flex; align-items: center;">
+                                                        <embed type="image/svg+xml" style="margin-right:40px;"
+                                                            src="{{ asset('svg/phone.svg') }}"
+                                                            class="attachment-full size-full wp-image-24"
+                                                            width="40" height="40"
+                                                            style="margin-right: 10px;">
+                                                        <span class="elementor-icon-list-text"
+                                                            style="color: #F5F5F5;">(+229)69416666</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
-            initModal();
-        });
-    </script>
+                                    </div>
+
+                                    <div class="elementor-element elementor-element-fa8f9c9 e-con-full e-flex e-con"
+                                        data-id="fa8f9c9" data-element_type="container"
+                                        data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                                        <div class="elementor-element elementor-element-7e5db2d elementor-widget elementor-widget-text-editor"
+                                            data-id="7e5db2d" data-element_type="widget"
+                                            data-widget_type="text-editor.default">
+                                            <a style="color: rgb(202, 39, 39);text-decoration:none;"
+                                                href="{{ route('login') }}">
+                                                <div class="elementor-widget-container">
+                                                    <p>CONNEXION</p>
+                                                </div>
+                                            </a>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-ada5c26 e-con-full e-flex e-con"
+                                    data-id="ada5c26" data-element_type="container"
+                                    data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+                                    <div class="elementor-element elementor-element-a85c2e7 elementor-widget elementor-widget-text-editor"
+                                        data-id="a85c2e7" data-element_type="widget"
+                                        data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container" style="color: #F5F5F5;">
+                                            <p style="color: #F5F5F5;">Copyright 2024 © Savoir Plus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- #page -->
+                <link rel="stylesheet" id="e-animations-css"
+                    href="https://agence.savplus.net/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.14.1"
+                    media="all">
+                <script id="astra-theme-js-js-extra">
+                    var astra = {
+                        "break_point": "921",
+                        "isRtl": "",
+                        "is_scroll_to_id": "",
+                        "is_scroll_to_top": "",
+                        "is_header_footer_builder_active": "1"
+                    };
+                </script>
+                <script src="https://agence.savplus.net/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.6.8"
+                    id="astra-theme-js-js"></script>
+                <script src="https://agence.savplus.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+                <script src="https://agence.savplus.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js">
+                </script>
+                <script
+                    src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1"
+                    id="smartmenus-js"></script>
+                <script
+                    src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.14.1"
+                    id="elementor-pro-webpack-runtime-js"></script>
+                <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1"
+                    id="elementor-webpack-runtime-js"></script>
+                <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1"
+                    id="elementor-frontend-modules-js"></script>
+                <script src="https://agence.savplus.net/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2"
+                    id="wp-polyfill-inert-js"></script>
+                <script src="https://agence.savplus.net/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0"
+                    id="regenerator-runtime-js"></script>
+                <script src="https://agence.savplus.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js">
+                </script>
+                <script src="https://agence.savplus.net/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js">
+                </script>
+                <script src="https://agence.savplus.net/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js">
+                </script>
+                <script id="wp-i18n-js-after">
+                    wp.i18n.setLocaleData({
+                        'text direction\u0004ltr': ['ltr']
+                    });
+                </script>
+                <script id="elementor-pro-frontend-js-before">
+                    var ElementorProFrontendConfig = {
+                        "ajaxurl": "https:\/\/agence.savplus.net\/wp-admin\/admin-ajax.php",
+                        "nonce": "a2b3fb4f0c",
+                        "urls": {
+                            "assets": "https:\/\/agence.savplus.net\/wp-content\/plugins\/elementor-pro\/assets\/",
+                            "rest": "https:\/\/agence.savplus.net\/index.php?rest_route=\/"
+                        },
+                        "shareButtonsNetworks": {
+                            "facebook": {
+                                "title": "Facebook",
+                                "has_counter": true
+                            },
+                            "twitter": {
+                                "title": "Twitter"
+                            },
+                            "linkedin": {
+                                "title": "LinkedIn",
+                                "has_counter": true
+                            },
+                            "pinterest": {
+                                "title": "Pinterest",
+                                "has_counter": true
+                            },
+                            "reddit": {
+                                "title": "Reddit",
+                                "has_counter": true
+                            },
+                            "vk": {
+                                "title": "VK",
+                                "has_counter": true
+                            },
+                            "odnoklassniki": {
+                                "title": "OK",
+                                "has_counter": true
+                            },
+                            "tumblr": {
+                                "title": "Tumblr"
+                            },
+                            "digg": {
+                                "title": "Digg"
+                            },
+                            "skype": {
+                                "title": "Skype"
+                            },
+                            "stumbleupon": {
+                                "title": "StumbleUpon",
+                                "has_counter": true
+                            },
+                            "mix": {
+                                "title": "Mix"
+                            },
+                            "telegram": {
+                                "title": "Telegram"
+                            },
+                            "pocket": {
+                                "title": "Pocket",
+                                "has_counter": true
+                            },
+                            "xing": {
+                                "title": "XING",
+                                "has_counter": true
+                            },
+                            "whatsapp": {
+                                "title": "WhatsApp"
+                            },
+                            "email": {
+                                "title": "Email"
+                            },
+                            "print": {
+                                "title": "Print"
+                            }
+                        },
+                        "facebook_sdk": {
+                            "lang": "fr_FR",
+                            "app_id": ""
+                        },
+                        "lottie": {
+                            "defaultAnimationUrl": "https:\/\/agence.savplus.net\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+                        }
+                    };
+                </script>
+                <script src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.14.1"
+                    id="elementor-pro-frontend-js"></script>
+                <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
+                    id="elementor-waypoints-js"></script>
+                <script src="https://agence.savplus.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js">
+                </script>
+                <script id="elementor-frontend-js-before">
+                    var elementorFrontendConfig = {
+                        "environmentMode": {
+                            "edit": false,
+                            "wpPreview": false,
+                            "isScriptDebug": false
+                        },
+                        "i18n": {
+                            "shareOnFacebook": "Partager sur Facebook",
+                            "shareOnTwitter": "Partager sur Twitter",
+                            "pinIt": "L\u2019\u00e9pingler",
+                            "download": "T\u00e9l\u00e9charger",
+                            "downloadImage": "T\u00e9l\u00e9charger une image",
+                            "fullscreen": "Plein \u00e9cran",
+                            "zoom": "Zoom",
+                            "share": "Partager",
+                            "playVideo": "Lire la vid\u00e9o",
+                            "previous": "Pr\u00e9c\u00e9dent",
+                            "next": "Suivant",
+                            "close": "Fermer",
+                            "a11yCarouselWrapperAriaLabel": "Carousel | Scroll horizontal: Fl\u00e8che gauche & droite",
+                            "a11yCarouselPrevSlideMessage": "Diapositive pr\u00e9c\u00e9dente",
+                            "a11yCarouselNextSlideMessage": "Diapositive suivante",
+                            "a11yCarouselFirstSlideMessage": "Ceci est la premi\u00e8re diapositive",
+                            "a11yCarouselLastSlideMessage": "Ceci est la derni\u00e8re diapositive",
+                            "a11yCarouselPaginationBulletMessage": "Aller \u00e0 la diapositive"
+                        },
+                        "is_rtl": false,
+                        "breakpoints": {
+                            "xs": 0,
+                            "sm": 480,
+                            "md": 768,
+                            "lg": 1025,
+                            "xl": 1440,
+                            "xxl": 1600
+                        },
+                        "responsive": {
+                            "breakpoints": {
+                                "mobile": {
+                                    "label": "Portrait mobile",
+                                    "value": 767,
+                                    "default_value": 767,
+                                    "direction": "max",
+                                    "is_enabled": true
+                                },
+                                "mobile_extra": {
+                                    "label": "Mobile Paysage",
+                                    "value": 880,
+                                    "default_value": 880,
+                                    "direction": "max",
+                                    "is_enabled": false
+                                },
+                                "tablet": {
+                                    "label": "Tablette en mode portrait",
+                                    "value": 1024,
+                                    "default_value": 1024,
+                                    "direction": "max",
+                                    "is_enabled": true
+                                },
+                                "tablet_extra": {
+                                    "label": "Tablette en mode paysage",
+                                    "value": 1200,
+                                    "default_value": 1200,
+                                    "direction": "max",
+                                    "is_enabled": false
+                                },
+                                "laptop": {
+                                    "label": "Portable",
+                                    "value": 1366,
+                                    "default_value": 1366,
+                                    "direction": "max",
+                                    "is_enabled": false
+                                },
+                                "widescreen": {
+                                    "label": "\u00c9cran large",
+                                    "value": 2400,
+                                    "default_value": 2400,
+                                    "direction": "min",
+                                    "is_enabled": false
+                                }
+                            }
+                        },
+                        "version": "3.14.1",
+                        "is_static": false,
+                        "experimentalFeatures": {
+                            "e_dom_optimization": true,
+                            "e_optimized_assets_loading": true,
+                            "e_optimized_css_loading": true,
+                            "a11y_improvements": true,
+                            "additional_custom_breakpoints": true,
+                            "container": true,
+                            "theme_builder_v2": true,
+                            "landing-pages": true,
+                            "page-transitions": true,
+                            "notes": true,
+                            "loop": true,
+                            "form-submissions": true,
+                            "e_scroll_snap": true
+                        },
+                        "urls": {
+                            "assets": "https:\/\/agence.savplus.net\/wp-content\/plugins\/elementor\/assets\/"
+                        },
+                        "swiperClass": "swiper-container",
+                        "settings": {
+                            "page": [],
+                            "editorPreferences": []
+                        },
+                        "kit": {
+                            "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                            "global_image_lightbox": "yes",
+                            "lightbox_enable_counter": "yes",
+                            "lightbox_enable_fullscreen": "yes",
+                            "lightbox_enable_zoom": "yes",
+                            "lightbox_enable_share": "yes",
+                            "lightbox_title_src": "title",
+                            "lightbox_description_src": "description"
+                        },
+                        "post": {
+                            "id": 6,
+                            "title": "Accueil%20-%20Agence%20web%20Savplus",
+                            "excerpt": "",
+                            "featuredImage": false
+                        }
+                    };
+                </script>
+                <script src="https://agence.savplus.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1"
+                    id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+                <script src="https://agence.savplus.net/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.14.1"
+                    id="pro-elements-handlers-js"></script><svg style="display: none;" class="e-font-icon-svg-symbols"></svg>
+                <script>
+                    /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
+                        .addEventListener("hashchange", function() {
+                            var t, e = location.hash.substring(1);
+                            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i
+                                .test(t.tagName) || (t.tabIndex = -1), t.focus())
+                        }, !1);
+                </script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        // Fonction pour initialiser le modal et gérer le clic sur le bouton déclencheur
+                        function initModal() {
+                            var $formModal = $('#formModal');
+                            $formModal.modal({
+                                show: false
+                            });
+
+                            $('#openModalBtn').click(function(e) {
+                                e.preventDefault();
+                                // Remplir le champ de catégorie avec la valeur "4"
+                                $('#form-field-ca').val(4);
+                                $formModal.modal('show');
+                            });
+
+                            $formModal.on('hidden.bs.modal', function() {
+                                // Réinitialiser le contenu du formulaire ici si nécessaire
+                            });
+                        }
+
+                        initModal();
+                    });
+                </script>
 
 </body>
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\payMail;
 use App\Models\article;
 use App\Models\articleTransaction;
-use App\Models\categorie;
+use App\Models\categorie; 
 use App\Models\transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -30,9 +30,6 @@ class TransactionController extends Controller
 
     public function success(Request $request, $id)
     {
-        //Je recupere les informations de la transaction effetué depuis le widget dans la vue
-        //Puis je les enregistrent dans les tables transactions,et article_transactions
-
         $public_key = config('kkiapay.public_key');
         $private_key = config('kkiapay.private_key');
         $secret = config('kkiapay.secret');
@@ -40,61 +37,47 @@ class TransactionController extends Controller
         $kkiapay = new \Kkiapay\Kkiapay(
             $public_key,
             $private_key,
-            $secret,
+            $secret
         );
-        $transactionData = $request->all();
-        Log::info($request->all());
 
-        $transactionId = $transactionData['transaction_id'];
+        try {
+            $transactionData = $request->all();
+            Log::info('Transaction data from request: ', $transactionData);
 
-        $transactionDetails = $kkiapay->verifyTransaction($transactionId);
+            $transactionId = $transactionData['transaction_id'];
+  
+            // Vérifier la transaction
+            $transactionDetails = $kkiapay->verifyTransaction($transactionId);
 
-        Log::info(get_object_vars($transactionDetails));
-        if ($transactionDetails->status === 'SUCCESS') {
-            // Enregistre les données de la transaction dans la base de données
-            $transaction = Transaction::create([
-                'name' => $transactionDetails->client->fullname ?? null,
-                'email' => $transactionDetails->client->email ?? null,
-                'phone' => $transactionDetails->client->phone ?? null,
-                'amount' => $transactionDetails->amount,
-                'status' => $transactionDetails->status,
-                'token' => $transactionId ?? null,
-                'payment_method' => $transactionDetails->source ?? null,
-            ]);
+            // Log de la réponse complète pour le débogage
+            Log::info('Full transaction details: ', (array) $transactionDetails);
 
-            ArticleTransaction::create([
-                'article_id' => $id,
-                'transaction_id' => $transaction->id,
-            ]);
-
-            $state = json_decode(json_encode($transactionDetails->state), true);
-
-
-            $email = $transaction->email;
-            $nom = $transaction->name;
-            $mailData = [
-                'name' => $nom,
-                'amount' => $transaction->amount,
-                'status' => $transaction->status,
-                'transactionId' => $transactionId,
-                'paymentMethod' => $transactionDetails->source ?? 'Non renseignée',
-                'article' => $state['article'] ?? 'Non renseigné',
-                "categorie" => $state['categorie'] ?? 'Non renseignée'
-            ];
-           
-
-            Mail::to($email)->queue(new payMail($email, $mailData));
-            
+            // Vérifier si transactionDetails est un objet et contient les détails attendus
+            if (is_object($transactionDetails) && $transactionDetails->status === 'SUCCESS') {
+                // Sauvegarder les données de la transaction dans la base de données
+                $transaction = transaction::create([
+                    'name' => $transactionDetails->client->fullname ?? null,
+                    'phone' => $transactionDetails->client->phone ?? null,
+                    'statut' => $transactionDetails->status,
+                    'montant' => $transactionDetails->amount,
+                    'token' => $transactionId ?? null,
+                    'quantite' => $transactionData['quantite'],
+                ]);
+            }
 
             return redirect()->route('emails.index')->with('success', 'Le mail a été envoyé avec succès ! Consultez votre boîte mail');
-        } else {
-            // Gérer le cas où la transaction a échoué
-            return response()->json(['error' => 'La transaction a échoué'], 400);
+        } catch (\Exception $e) {
+            Log::error('Erreur lors de la vérification de la transaction: ' . $e->getMessage());
+            return response()->json(['error' => 'Erreur lors de la vérification de la transaction'], 500);
         }
     }
 
+
+
+
     public function saveArticle(Request $request)
     {
+        //
 
         //J'enregistre les informations  de l'article et je renvoie son id  avant d'etre utiliser dans le front-end pour le payment 
         //via le widget de kkiapay
