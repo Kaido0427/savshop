@@ -35,7 +35,7 @@
     <!--start top header-->
     <header class="top-header">
         <nav class="navbar navbar-expand-xl w-100 navbar-dark container gap-3">
-            <a class="navbar-brand d-none d-xl-inline" href="index.html"><img src="assets/images/logo.webp"
+            <a class="navbar-brand d-none d-xl-inline" href="index.html"><img src="{{ asset('image/logo_sav.png') }}"
                     class="logo-img" alt=""></a>
             <a class="mobile-menu-btn d-inline d-xl-none" href="javascript:;" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar">
@@ -43,16 +43,15 @@
             </a>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
                 <div class="offcanvas-header">
-                    <div class="offcanvas-logo"><img src="assets/images/logo.webp" class="logo-img" alt="">
+                    <div class="offcanvas-logo"> <a href="https://savplus.net"><img src="{{ asset('image/logo_sav.png') }}"
+                                class="logo-img" alt=""> </a>
                     </div>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body primary-menu">
                     <ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://savplus.net">SAVPLUS CONSEIL</a>
-                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
                                 data-bs-toggle="dropdown">
@@ -87,48 +86,146 @@
                         </div>
                     </a>
                 </li>
-                <li class="nav-item">
+              {{-- <li class="nav-item">
                     <a class="nav-link" href="account-dashboard.html"><i class="bi bi-person-circle"></i></a>
-                </li>
+                </li>--}}
             </ul>
         </nav>
     </header>
     <!--end top header-->
-
 
     <!--start page content-->
     <div class="page-content">
         <!--start carousel-->
         <section class="slider-section">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active bg-primary">
+                    <div class="carousel-item active" style="background-color:#6d74c2;">
                         <div class="row d-flex align-items-center">
-                            <div class="col d-none d-lg-flex justify-content-center">
-                                <div class="">
-                                    <h3 class="h3 fw-light text-white fw-bold">New Arrival</h3>
-                                    <h1 class="h1 text-white fw-bold">Women Fashion</h1>
-                                    <p class="text-white fw-bold"><i>Last call for upto 25%</i></p>
-                                    <div class=""><a class="btn btn-dark btn-ecomm" href="shop-grid.html">Shop
-                                            Now</a>
-                                    </div>
+                            <div class="col-12 col-lg-6 text-center text-lg-start">
+                                <div class="carousel-content">
+                                    <h3 class="h3 fw-light text-white fw-bold">TOUTES NOS OFFRES A PORTEE DE MAIN</h3>
+                                    <h1 class="h1 text-white fw-bold"></h1>
+                                    <p class="text-white fw-bold"><i></i></p>
+                                    <div class=""><a class="btn btn-dark btn-ecomm" href="#catalogue">VOIR LE
+                                            CATALOGUE !</a></div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <img src="assets/images/sliders/s_1.webp" class="img-fluid" alt="...">
+                            <div class="col-12 col-lg-6">
+                                <img src="{{ asset('image/hero.jpg') }}" class="img-fluid" alt="..."
+                                    height="550" width="550">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-color: #FF0000;">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-12 col-lg-6 text-center text-lg-start">
+                                <div class="carousel-content">
+                                    <h3 class="h3 fw-light text-white fw-bold">OFFRE SPECIALE!</h3>
+                                    <h1 class="h1 text-white fw-bold">35.000 XOF</h1>
+
+                                    <div class=""><a class="btn btn-dark btn-ecomm"
+                                            href="#">Souscrire maintenant !</a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <img src="{{ asset('image/deal.jpg') }}" class="img-fluid" alt="..."
+                                    height="550" width="550">
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
+        <style>
+            .carousel-item {
+                min-height: 300px;
+            }
+
+            .carousel-item .row {
+                position: relative;
+            }
+
+            .carousel-content {
+                padding: 20px;
+            }
+
+            @media (max-width: 991px) {
+                .carousel-item .row {
+                    flex-direction: column-reverse;
+                }
+
+                .carousel-content {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    z-index: 2;
+                }
+
+                .carousel-item .col-12:last-child {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 1;
+                }
+
+                .carousel-item .col-12:last-child img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                /* Réduction de la taille du texte sur mobile */
+                .carousel-content h3 {
+                    font-size: 1.2rem;
+                }
+
+                .carousel-content h1 {
+                    font-size: 1.8rem;
+                }
+
+                .carousel-content p {
+                    font-size: 0.9rem;
+                }
+
+                .carousel-content .btn {
+                    font-size: 0.8rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .carousel-item .row {
+                    min-height: 400px;
+                }
+            }
+        </style>
         <!--end carousel-->
         <!--start tabular product-->
         <section class="product-tab-section section-padding bg-light">
             <div class="container">
                 <div class="text-center pb-3">
-                    <h3 class="mb-0 h3 fw-bold">Nos offres</h3>
+                    <h3 class="mb-0 h3 fw-bold">NOS OFFRES</h3>
                 </div>
                 <div class="row">
                     <div class="col-auto mx-auto">
@@ -163,26 +260,22 @@
                                                         data-bs-target="#QuickViewModal"
                                                         data-title="{{ $article->nom_article }}"
                                                         data-description="{{ $article->description }}"
-                                                        data-price="{{ $article->prix }}">
+                                                        data-price="{{ $article->prix }}"
+                                                        data-image="{{ asset($article->offre_url) }}">
                                                         <i class="bi bi-zoom-in"></i>
                                                     </a>
                                                 </div>
 
                                                 <a href="#">
-                                                    <img src="#" class="card-img-top" alt="...">
+                                                    <img src="{{ asset($article->offre_url) }}" class="card-img-top"
+                                                        alt="...">
                                                 </a>
                                             </div>
                                             <div class="card-body">
                                                 <div class="product-info text-center">
                                                     <h6 class="mb-1 fw-bold product-name">{{ $article->nom_article }}
                                                     </h6>
-                                                    <div class="ratings mb-1 h6">
-                                                        <i class="bi bi-star-fill text-warning"></i>
-                                                        <i class="bi bi-star-fill text-warning"></i>
-                                                        <i class="bi bi-star-fill text-warning"></i>
-                                                        <i class="bi bi-star-fill text-warning"></i>
-                                                        <i class="bi bi-star-fill text-warning"></i>
-                                                    </div>
+
                                                     <p class="mb-0 h6 fw-bold product-price">{{ $article->prix }}
                                                         XOF/Mois</p>
                                                 </div>
@@ -204,54 +297,101 @@
     </footer>
     <!--start quick view-->
     <!-- Modal -->
-   
+
     <div class="modal fade" id="QuickViewModal" tabindex="-1">
-      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content rounded-0">
-              <div class="modal-body">
-                  <div class="row g-3">
-                    <div class="col-12 col-xl-6">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-12 col-xl-6">
 
-                      <div class="wrap-modal-slider">
+                            <div class="wrap-modal-slider">
 
-                          <div class="slider-for">
-                              <div>
-                                  <img src="{{asset('assets/images/product-images/01.jpg')}}" alt=""
-                                      class="img-fluid">
-                              </div>
+                                <div class="slider-for">
+                                    <div>
+                                        <img src="{{ asset('assets/images/product-images/01.jpg') }}" alt=""
+                                            class="img-fluid">
+                                    </div>
 
-                          </div>
-                      </div>
-                  </div>
-                      <div class="col-12 col-xl-6">
-                          <div class="product-info">
-                              <h4 class="product-title fw-bold mb-1"></h4>
-                              <p class="mb-0"></p>
-                              <hr>
-                              <div class="product-price d-flex align-items-center gap-3">
-                                  <div class="h4 fw-bold"></div>
-                              </div>
-                              <p class="fw-bold mb-0 mt-1 text-success">inclusive of all taxes</p>
-                              <div class="cart-buttons mt-3">
-                                  <div class="buttons d-flex flex-column gap-3 mt-4">
-                                      <a href="javascript:;" class="btn btn-lg btn-dark btn-ecomm px-5 py-3 flex-grow-1">
-                                          <i class="bi bi-basket2 me-2"></i>Add to Bag
-                                      </a>
-                                      <a href="javascript:;" class="btn btn-lg btn-outline-dark btn-ecomm px-5 py-3">
-                                          <i class="bi bi-suit-heart me-2"></i>Wishlist
-                                      </a>
-                                  </div>
-                              </div>
-                              <hr class="my-3">
-                          </div>
-                      </div>
-                  </div>
-                  <!--end row-->
-              </div>
-          </div>
-      </div>
-  </div>
-  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <div class="product-info">
+                                <h4 class="product-title fw-bold mb-1"></h4>
+                                <p class="mb-0"></p>
+                                <hr>
+                                <div class="product-price d-flex align-items-center gap-3">
+                                    <div class="h4 fw-bold"></div>
+                                </div>
+
+                                <div class="cart-buttons mt-3">
+                                    <div class="buttons d-flex flex-column gap-3 mt-4">
+                                        <input type="number" min="1"
+                                            class="btn btn-lg btn-dark btn-ecomm px-5 py-3 flex-grow-1"
+                                            placeholder="Entrez la quantité">
+
+
+                                        <script src="https://cdn.kkiapay.me/k.js"></script>
+                                        <div id="kkiapay-container"
+                                            class="btn btn-lg btn-outline-dark btn-ecomm px-5 py-3"></div>
+                                    </div>
+                                </div>
+                                <script src="https://cdn.kkiapay.me/k.js"></script>
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function() {
+                                        const quickViewModal = document.getElementById('QuickViewModal');
+                                        const kkiapayContainer = document.getElementById('kkiapay-container');
+                                        const quantityInput = document.querySelector('.cart-buttons input[type="number"]');
+                                        let currentArticle = null;
+
+                                        quickViewModal.addEventListener('show.bs.modal', function(event) {
+                                            const button = event.relatedTarget;
+                                            const articleName = button.getAttribute('data-title');
+                                            const articlePrice = parseFloat(button.getAttribute('data-price'));
+                                            const articleId = button.getAttribute('data-id');
+
+                                            document.querySelector('.product-title').textContent = articleName;
+                                            document.querySelector('.product-price .fw-bold').textContent = `${articlePrice} XOF/Mois`;
+
+                                            currentArticle = {
+                                                id: articleId,
+                                                name: articleName,
+                                                price: articlePrice
+                                            };
+
+                                            updateKkiapayWidget();
+                                        });
+
+                                        quantityInput.addEventListener('input', updateKkiapayWidget);
+
+                                        function updateKkiapayWidget() {
+                                            if (!currentArticle) return;
+
+                                            const quantity = parseInt(quantityInput.value) || 1;
+                                            const totalAmount = currentArticle.price * quantity;
+
+                                            kkiapayContainer.innerHTML = '';
+                                            const widget = document.createElement('kkiapay-widget');
+                                            widget.setAttribute('amount', totalAmount.toFixed(2));
+                                            widget.setAttribute('key', 'cb876650e192fdf79d12342d023a6f4ebe257de4');
+                                            widget.setAttribute('position', 'center');
+                                            widget.setAttribute('sandbox', 'false');
+                                            widget.setAttribute('callback', `https://caisse.savplus.net/paysuccess/${currentArticle.id}`);
+                                            kkiapayContainer.appendChild(widget);
+                                        }
+                                    });
+                                </script>
+                                <hr class="my-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!--end row-->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--end quick view-->
     <!--Start Back To Top Button-->
     <a href="javaScript:;" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -277,8 +417,12 @@
                 // Mettre à jour les éléments du modal avec les données de l'article
                 quickViewModal.querySelector('.product-title').textContent = title;
                 quickViewModal.querySelector('.product-info p').textContent = description;
-                quickViewModal.querySelector('.product-price .h4').textContent = '$' + price;
+                quickViewModal.querySelector('.product-price .h4').textContent = price + ' XOF';
                 quickViewModal.querySelector('.slider-for img').src = image;
+            });
+
+            quickViewModal.addEventListener('hidden.bs.modal', function() {
+                quantityInput.value = '';
             });
         });
     </script>
